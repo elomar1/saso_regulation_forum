@@ -1,0 +1,26 @@
+// montserrat
+@font-face {
+    font-family: "SomarLight";
+    src: url($font-path + "SomarSans-Light.woff") format("woff");
+    font-weight: $w-normal;
+  }
+  @font-face {
+    font-family: "SomarRegular";
+    src: url($font-path + "SomarSans-Regular.woff") format("woff");
+    font-weight: $w-normal;
+  }
+  @font-face {
+    font-family: "SomarMedium";
+    src: url($font-path + "SSomarSans-Medium.woff") format("woff");
+    font-weight: $w-normal;
+  }
+  @font-face {
+    font-family: "SomarBold";
+    src: url($font-path + "SomarSans-Bold.woff") format("woff");
+    font-weight: $w-normal;
+  }
+  @font-face {
+    font-family: "Inter";
+    src: url($font-path + "Inter-Regular.ttf") format("ttf");
+    font-weight: $w-normal;
+  }

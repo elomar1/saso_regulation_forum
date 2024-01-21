@@ -1,0 +1,88 @@
+body {
+  background: #eef1f4;
+  font-family: "SomarRegular";
+}
+.font20 {
+  font-size: 20px;
+}
+p {
+  line-height: normal;
+}
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btnBoder {
+  min-width: 134px;
+  min-height: 50px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  @extend .flexCenter;
+}
+/* start home page */
+.navbarCustomSaso {
+  background: #fff;
+
+  // padding: 16px 0 21px 0;
+  .navbar-light {
+    .navbar-nav {
+      .nav-link {
+        padding: 0;
+        margin-#{$end-direction}: 20px;
+        border: unset;
+        background: transparent;
+
+        span {
+          font-size: 20px;
+          color: #6c788d;
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+
+  padding: 19px 0 18px 0;
+
+  .navbar.navbar-expand-lg {
+    flex-direction: row-reverse;
+    padding: 0;
+
+    .navbar-brand {
+      img {
+        height: 53px;
+      }
+    }
+  }
+}
+
+
+.sasoFooter {
+    background: #F8F8F8;
+    padding: 17px 0;
+    .container {
+        justify-content: space-between;
+    }
+    .logosFooter {
+        a {
+            &:not(:last-of-type) {
+                margin-right: 20px;
+            }
+        }
+    }
+    .sasoRSV,
+    .policySec {
+        a,p {
+            font-size: 12px;
+    color: #464646;
+    margin-bottom: 0;
+        }
+        
+    }
+    .policySec {
+        a {
+    margin: 5px;
+        }
+        
+    }
+}
