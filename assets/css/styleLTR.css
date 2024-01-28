@@ -924,6 +924,26 @@ p {
   background: #f8f8f8;
 }
 
+.sasoModalInner .modal-dialog {
+  max-width: 1000px;
+}
+
+.sasoModalInner .titleModal {
+  color: #008e7d;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.sasoModalInner input,
+.sasoModalInner select,
+.sasoModalInner textarea {
+  width: 100%;
+}
+
+.sasoModalInner .modal-body {
+  padding: 30px 18px;
+}
+
 .navbarCustomSaso .navbar-light .dropdownCustom .nav-link > img:first-of-type {
   margin-top: 3px;
 }

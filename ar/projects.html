@@ -153,8 +153,166 @@
                             <span>إضافة مشروع جديد</span>
                         </button>
                         
+                        <!-- Modal -->
+                        <div class="modal fade sasoModalInner  " id="addingLN" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="form">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <h2 class="titleModal">إضافة مشروع جديد</h2>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="input-group ">
+                                                        <label class='label required' for="field1">عنوان المشروع    (عربي)</label>
+                                                        <input type="text" placeholder="كتابة اسم المشروع باللغة العربية" id="field1">
+                                                      </div>
+                                                </div>
+                                                <!-- end field -->
+                                                <div class="col-md-6">
+                                                    <div class="input-group  " >
+                                                        <label class='label required' for="field2">عنوان المشروع   (إنجليزي)</label>
+                                                        <input class="text-left" type="text" placeholder="Please Write Project Name in English" id="field2">
+                                                      </div>
+                                                </div>
+                                                <!-- end field -->
+                                                <div class="col-md-6">
+                                                    <div class="input-group">
+                                                        <label class="label">اسم القطاع</label>
+                                                        <select name="">
+                                                          <option selected="selected">بحث في كل القطاعات </option>
+                                                          <option value="1">1</option>
+                                                          <option value="2">2</option>
+                                                        </select>
+                                                      </div>
+                                                      <!-- end field -->
+                                                </div>
+                                                <!-- end field -->
+                                                <div class="col-md-6">
+                                                    <div class="input-group">
+                                                        <label class="label">اسم اللجنة</label>
+                                                        <select name="">
+                                                          <option selected="selected">بحث في كل اللجان</option>
+                                                          <option value="1">1</option>
+                                                          <option value="2">2</option>
+                                                        </select>
+                                                      </div>
+                                                      <!-- end field -->
+                                                </div>
+                                                <!-- end field -->
+                                                <div class="col-md-6">
+                                                    <div class="input-group">
+                                                        <label class='label' for="field12">وصف المشروع</label>
+                                                       <textarea id="field12"></textarea>
+                                                      </div>
+                                                </div>
+                                                 <!-- end field -->
+                                                 <div class="col-md-6">
+                                                    <div class="input-group">
+                                                        <label class='label' for="field12">المرفقات</label>
+                                                        <input class="filePoundClass" type="file" name="filepond" required multiple />
+                                                      </div>
+                                                </div>
+                                                <!-- end field -->
+                                                <div class="col-md-12">
+                                                   <div class="actionFormModal">
+                                                    <button type="submit" data-bs-toggle="modal" data-bs-target="#saveModal" class="btnMain">التالي</button>
+                                                   </div>
+                                                </div>
+                                            </div>
+                                            <!-- end row -->
+                                        </div>
+                                        <!-- end container -->
+                                    </div>
+                                </div>
+                                <!-- end box -->
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Button trigger modal -->
 
+  
+  <!-- Modal next -->
+  <div class="modal fade sasoModalInner" id="saveModal" tabindex="-1" aria-labelledby="saveModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+            <div class="form">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="titleModal">إضافة مشروع جديد</h2>
+                            <h3 class="font20">مراحل المشروع:</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="input-group ">
+                                <label class='label ' for="field1">اسم  المرحلة</label>
+                                <input type="text" placeholder="" id="field1">
+                              </div>
+                        </div>
+                        <!-- end field -->
+                        <div class="col-md-3">
+                            <div class="input-group  " >
+                                <label class='label ' for="field2">وصف المرحلة</label>
+                                <input class="text-left" type="text" placeholder="" id="field2">
+                              </div>
+                        </div>
+                        <!-- end field -->
+                        <div class="col-md-3">
+                            <div class="input-group  " >
+                                <label class='label ' for="">تاريخ بداية المرحلة</label>
+                                <div class="inputDate">
+                                    <input type="text" placeholder=" برجاء اختيار التاريخ"  onfocus="(this.type='date')"  onblur="(this.type='text')">
+                                </div>
+                              </div>
+                        </div>
+                        <!-- end field -->
+                        <div class="col-md-3">
+                            <div class="input-group  " >
+                                <label class='label ' for="">تاريخ نهاية المرحلة</label>
+                                <div class="inputDate">
+                                    <input type="text" placeholder=" برجاء اختيار التاريخ"  onfocus="(this.type='date')"  onblur="(this.type='text')">
+                                </div>
+                              </div>
+                        </div>
+                        <!-- end field -->
+                        <div class="col-md-3">
+                            <a href="#!" class="btnMainWhite addPadding">إضافة مرحلة جديدة </a>
+                        </div>
+                        <div class="col-md-12">
+                            <ul class="viewLevels">
+                                <li>
+                                    <span>المرحلة الأولى</span>
+                                    <span>التقرير الأسبوعي للفترة من 29 أكتوبر وحتى 5 ديسمبر 2023</span>
+                                    <span>تاريخ بداية المرحلة: 1/1/2024</span>
+                                    <span>تاريخ نهاية المرحلة: 31/12/2024</span>
+                                </li>
+                                <li>
+                                    <span>المرحلة الثانية</span>
+                                    <span>التقرير الأسبوعي للفترة من 29 أكتوبر وحتى 5 ديسمبر 2023</span>
+                                    <span>تاريخ بداية المرحلة: 1/1/2024</span>
+                                    <span>تاريخ نهاية المرحلة: 31/12/2024</span>
+                                </li>
+                            </ul>
+                        </div>
 
+                        <div class="col-md-12 text-left">
+                           <div class="actionFormModal">
+                            <button type="submit" class="btnMain">حفظ</button>
+                           </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+                        <!-- end modal -->
                     </div>
                     <!-- end search box -->
                     <div class="row customWidthRow">

@@ -679,7 +679,24 @@ p {
     }
   }
 }
-
+.sasoModalInner {
+  .modal-dialog {
+    max-width: 1000px;
+  }
+  .titleModal {
+    color: #008e7d;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  input,
+  select,
+  textarea {
+    width: 100%;
+  }
+  .modal-body {
+    padding: 30px 18px;
+  }
+}
 .navbarCustomSaso .navbar-light .dropdownCustom .nav-link > img:first-of-type {
   margin-top: 3px;
 }
