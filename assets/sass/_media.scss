@@ -1,3 +1,17 @@
+
+@media (min-width: 1800px) {
+    .WrapperContent {
+        > .container {
+            max-width: 1400px;
+        }
+    }
+}
+@media (min-width: 1400px) {
+    .homeSlider .wrapperSlide {
+        height: calc(100vh - 381px);
+        align-items: center;
+    }
+}
 @media (min-width: 1200px) {
     .containerCustom {
         max-width: 1300px;

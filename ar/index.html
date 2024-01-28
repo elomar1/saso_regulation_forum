@@ -1,198 +1,332 @@
 <!doctype html>
-<html lang="ar" dir="ltr">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html lang="ar" dir="rtl">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <!-- swiper  -->
-    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
-    <!--  Font Awesome CSS -->
-    <!-- <link rel="stylesheet" href="../assets/css/all.min.css"> -->
-    <!-- custom style -->
-    <link rel="stylesheet" href="../assets/css/styleLTR.css">
-    
-    <title>SASO</title>
-  </head>
-  <body>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../assets/css/bootstrapV5.min.css">
+  <!-- swiper  -->
+  <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+  <!--  Font Awesome CSS -->
+  <!-- <link rel="stylesheet" href="../assets/css/all.min.css"> -->
+  <!-- custom style -->
+  <link rel="stylesheet" href="../assets/css/styleRTL.css">
 
-    <!-- start navbar -->
-      <nav class="navbarCustomSaso">
-        <div class="container containerCustom">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">
-              <img src="../assets/images/new-logo.svg" alt="">
-            </a>
-             <!-- end logo saso -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- end button toggle -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <img src="../assets/images/langIcon.svg" alt="">
-                    <span>English</span>
-                  </a>
-                </li>
-                <!-- end link -->
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <img src="../assets/images/supportIcon.svg" alt="">
-                    <span>الدعم الفني</span>
-                  </a>
-                </li>
-                <!-- end link -->
-                <li class="nav-item">
-                  <button type="button" class="nav-link" data-toggle="modal" data-target="#loginHome">
-                    <img src="../assets/images/loginIcon.svg" alt="">
-                    <span>تسجيل دخول</span>
-                    </button>
-                </li>
-                <!-- end link -->
+  <title>SASO</title>
+</head>
 
-                <!-- <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+<body>
+  <!-- start modal for login -->
+  <div class="modal fade sasoModal" id="loginHome" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="loginRegister">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 clearPadding">
+                  <div class="logoLogin flexCenter">
+                    <img src="../assets/images/loginLogo.svg" alt="">
                   </div>
-                </li> -->
-              </ul>
-      
+                </div>
+                <!-- end logo -->
+                <div class="col-md-6">
+                  <div class="formModal">
+                    <div class="textForm">
+                      <img src="../assets/images/LogoLog.png" alt="">
+                      <h2 class="font30">أهلاً بك في منتدى اللوائح الفنية</h2>
+                      <p class="font20">من فضلك أدخل بياناتك لتسجيل الدخول</p>
+                    </div>
+                    <!-- end text -->
+                    <form class="form">
+                      <div class="input-group">
+                        <input type="text" placeholder="اسم المستخدم">
+                      </div>
+                      <!-- end field -->
+                      <div class="input-group">
+                        <input type="text" placeholder="كلمة المرور">
+                      </div>
+                      <!-- end field -->
+                      <button type="submit" class="submit btnMain">تسجيل دخول</button>
+                    </form>
+                    <a href="#!" class="registerWay2 flexCenter">
+                      <p>
+                        <strong>النفاذ الوطني الموحد</strong>
+                        يمكنك تسجيل الدخول باستخدام حسابك علي منصه الوصول الوطني الموحد
+                      </p>
+                      <img src="../assets/images/supportIcon.svg" alt="">
+                    </a>
+                    <p class="registerLink flexCenter">
+                      <button type="button" class="closeModal1 addAccount" data-bs-toggle="modal" data-bs-target="#registerHome">
+                        إنشاء حساب جديد
+                      </button>
+                      <span>ليس لديك حساب؟</span>
+                    </p>
+                  </div>
+                </div>
+                <!-- end form -->
+              </div>
             </div>
-            <!-- end links of menu -->
-          </nav>
+          </div>
+
+
         </div>
+        <!-- end body  -->
+      </div>
+    </div>
+  </div>
+  <!-- end modal  login -->
+  <!-- start modal  register -->
+  <div class="modal fade sasoModal" id="registerHome" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="loginRegister">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 clearPadding">
+                  <div class="logoLogin flexCenter">
+                    <img src="../assets/images/loginLogo.svg" alt="">
+                  </div>
+                </div>
+                <!-- end logo -->
+                <div class="col-md-6">
+                  <div class="formModal">
+                    <div class="textForm">
+                      <img src="../assets/images/LogoLog.png" alt="">
+                      <h2 class="font30">أهلاً بك في منتدى اللوائح الفنية</h2>
+                      <p class="font20">من فضلك أدخل بياناتك لإنشاء حساب جديد</p>
+                    </div>
+                    <!-- end text -->
+                    <form class="form">
+                      <div class="input-group">
+                        <input type="text" placeholder="الاسم الأول">
+                      </div>
+                      <!-- end field -->
+                      <div class="input-group">
+                        <input type="text" placeholder=" اسم العائلة">
+                      </div>
+                      <!-- end field -->
+                      <div class="input-group">
+                        <input type="number" placeholder=" رقم الموبايل">
+                      </div>
+                      <!-- end field -->
+                      <div class="input-group">
+                        <input type="email" placeholder="البريد الإلكتروني">
+                      </div>
+                      <!-- end field -->
+                      <div class="input-group">
+                        <select name="">
+                          <option selected="selected">الجهة</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                        </select>
+                      </div>
+                      <!-- end field -->
+                      <button type="submit" class="submit btnMain">تسجيل دخول</button>
+                    </form>
+                    <p class="registerLink flexCenter">
+                      <button type="button" class="closeModal2 addAccount" data-bs-toggle="modal" data-bs-target="#registerHome">
+                        إنشاء حساب جديد
+                      </button>
+                      <span>ليس لديك حساب؟</span>
+                    </p>
+                  </div>
+                </div>
+                <!-- end form -->
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- end body  -->
+      </div>
+    </div>
+  </div>
+  <!-- end modal  register -->
+
+  <div class="layoutDashboard homeClass">
+    <section class="contentDashboard">
+  <!-- start navbar -->
+  <nav class="navbarCustomSaso">
+    <div class="container containerCustom">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="../assets/images/new-logo.svg" alt="">
+        </a>
+        <!-- end logo saso -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- end button toggle -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="../assets/images/langIcon.svg" alt="">
+                <span>English</span>
+              </a>
+            </li>
+            <!-- end link -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="../assets/images/supportIcon.svg" alt="">
+                <span>الدعم الفني</span>
+              </a>
+            </li>
+            <!-- end link -->
+            <li class="nav-item">
+              <button type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#loginHome">
+                <img src="../assets/images/loginIcon.svg" alt="">
+                <span>تسجيل دخول</span>
+              </button>
+            </li>
+            <!-- end link -->
+          </ul>
+
+        </div>
+        <!-- end links of menu -->
       </nav>
-    <!-- end navbar -->
+    </div>
+  </nav>
+  <!-- end navbar -->
 
-    <!-- start modal for login -->
-        <div class="modal fade sasoModal" id="loginHome" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registerHome">
-                  register
-                </button>
-              </div>
-              <!-- end body  -->
-            </div>
-          </div>
-        </div>
-    <!-- end modal  login -->
-    <!-- start modal  register -->
-        <div class="modal fade sasoModal" id="registerHome" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                ...register
-              </div>
-                <!-- end body  -->
-            </div>
-          </div>
-        </div>
-    <!-- end modal  register -->
-
-
+  <!-- start Wrapper container -->
+  <div class="WrapperContent">
     <!-- start slider home page -->
     <section class="homeSlider">
-        <!-- start Swiper -->
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="wrapperSlide">
-                <img src="../assets/images/Banner.png" alt="" class="aboImg">
-                <div class="container containerCustom">
-                  <div class="textBanner">
-                    <h2>
-                      منتدى اللوائح الفنية <br>
-                      هيئة المواصفات السعودية
-                    </h2>
-                    <p>
-                      تسعى الهيئة السعودية للمواصفات والمقاييس والجودة إلى تقديم أفضل الخدمات للمستفيدين والحفاظ على صحة وسلامة المستهلك، والعمل على تطوير وتحديث المواصفات القياسية السعودية واللوائح الفنية بشكل مستمر لحماية أسواقنا الوطنية من السلع المقلدة والرديئة والمغشوشة ودعم الاقتصاد الوطني
-                    </p>
-                    <a href="#!" class="btnBoder">المزيد</a>
-                  </div>
+      <!-- start Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="wrapperSlide">
+              <img src="../assets/images/Banner.png" alt="" class="aboImg">
+              <div class="container containerCustom">
+                <div class="textBanner">
+                  <h2>
+                    منتدى اللوائح الفنية <br>
+                    هيئة المواصفات السعودية
+                  </h2>
+                  <p>
+                    تسعى الهيئة السعودية للمواصفات والمقاييس والجودة إلى تقديم أفضل الخدمات للمستفيدين والحفاظ على صحة
+                    وسلامة المستهلك، والعمل على تطوير وتحديث المواصفات القياسية السعودية واللوائح الفنية بشكل مستمر
+                    لحماية أسواقنا الوطنية من السلع المقلدة والرديئة والمغشوشة ودعم الاقتصاد الوطني
+                  </p>
+                  <a href="#!" class="btnBoder">المزيد</a>
                 </div>
               </div>
             </div>
-            <!-- end slide -->
-            <div class="swiper-slide">
-              <div class="wrapperSlide">
-                <img src="../assets/images/Banner.png" alt="" class="aboImg">
-                <div class="container containerCustom">
-                  <div class="textBanner">
-                    <h2>
-                      منتدى اللوائح الفنية
-                      هيئة المواصفات السعودية
-                    </h2>
-                    <p>
-                      تسعى الهيئة السعودية للمواصفات والمقاييس والجودة إلى تقديم أفضل الخدمات للمستفيدين والحفاظ على صحة وسلامة المستهلك، والعمل على تطوير وتحديث المواصفات القياسية السعودية واللوائح الفنية بشكل مستمر لحماية أسواقنا الوطنية من السلع المقلدة والرديئة والمغشوشة ودعم الاقتصاد الوطني
-                    </p>
-                    <a href="#!" class="btnBoder">المزيد</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end slide -->
           </div>
-          <div class="swiper-pagination"></div>
+          <!-- end slide -->
+          <div class="swiper-slide">
+            <div class="wrapperSlide">
+              <img src="../assets/images/Banner.png" alt="" class="aboImg">
+              <div class="container containerCustom">
+                <div class="textBanner">
+                  <h2>
+                    منتدى اللوائح الفنية
+                    هيئة المواصفات السعودية
+                  </h2>
+                  <p>
+                    تسعى الهيئة السعودية للمواصفات والمقاييس والجودة إلى تقديم أفضل الخدمات للمستفيدين والحفاظ على صحة
+                    وسلامة المستهلك، والعمل على تطوير وتحديث المواصفات القياسية السعودية واللوائح الفنية بشكل مستمر
+                    لحماية أسواقنا الوطنية من السلع المقلدة والرديئة والمغشوشة ودعم الاقتصاد الوطني
+                  </p>
+                  <a href="#!" class="btnBoder">المزيد</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end slide -->
         </div>
-        <!-- end Swiper -->
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- end Swiper -->
     </section>
     <!-- end slider home page -->
 
- 
-
-    <footer class="sasoFooter">
-      <div class="container containerCustom flexCenter">
-        <div class="logosFooter">
-          <a href="#!"><img src="../assets/images/SASOFooter.svg" alt=""></a>
-          <a href="#!"><img src="../assets/images/2030.svg" alt=""></a>
-          <a href="#!"><img src="../assets/images/Govsa.svg" alt=""></a>
-        </div>
-        <!-- end logo -->
-        <div class="policySec">
-          <a href="#!" >اتصل بنا</a>|
-          <a href="#!" > الأسئلة الشائعة</a>|
-          <a href="#!" > أحكام الإستخدام</a>|
-          <a href="#!" >سياسة وشروط الخصوصية</a>
-        </div>
-        <!-- end section -->
-        <div class="sasoRSV">
-          <p>جميع الحقوق محفوظة للهيئة السعودية للمواصفات والمقاييس والجودة @2023</p>
+    <section class="homeNumber">
+      <div class="container containerCustom">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="boxNum">
+              <img src="../assets/images/numIcon1.svg" alt="" class="iconNum">
+              <div class="numberCountUp">
+                <h2 class="counter">130</h2>
+                <span>عدد اللوائح</span>
+              </div>
+            </div>
+          </div>
+          <!-- end col 4 -->
+          <div class="col-md-4">
+            <div class="boxNum">
+              <img src="../assets/images/numIcon2.svg" alt="" class="iconNum">
+              <div class="numberCountUp">
+                <h2 class="counter">120</h2>
+                <span>عدد المشاريع </span>
+              </div>
+            </div>
+          </div>
+          <!-- end col 4 -->
+          <div class="col-md-4">
+            <div class="boxNum">
+              <img src="../assets/images/numIcon3.svg" alt="" class="iconNum">
+              <div class="numberCountUp">
+                <h2 class="counter">50</h2>
+                <span> عدد الفنيين</span>
+              </div>
+            </div>
+          </div>
+          <!-- end col 4 -->
         </div>
       </div>
-    </footer>
+    </section>
+  </div>
+  <!-- end Wrapper container -->
+
+  <footer class="sasoFooter">
+    <div class="container containerCustom flexCenter">
+      <div class="logosFooter">
+        <a href="#!"><img src="../assets/images/SASOFooter.svg" alt=""></a>
+        <a href="#!"><img src="../assets/images/2030.svg" alt=""></a>
+        <a href="#!"><img src="../assets/images/Govsa.svg" alt=""></a>
+      </div>
+      <!-- end logo -->
+      <div class="policySec">
+        <a href="#!">اتصل بنا</a>|
+        <a href="#!"> الأسئلة الشائعة</a>|
+        <a href="#!"> أحكام الإستخدام</a>|
+        <a href="#!">سياسة وشروط الخصوصية</a>
+      </div>
+      <!-- end section -->
+      <div class="sasoRSV">
+        <p>جميع الحقوق محفوظة للهيئة السعودية للمواصفات والمقاييس والجودة @2023</p>
+      </div>
+    </div>
+  </footer>
+    </section>
+    <aside class="LinksDashboard">
+
+    </aside>
+  </div>
 
 
-    <!-- start script ref  -->
-    <script src="../assets/js/jQueryV3.5.js" ></script>
-    <script src="../assets/js/bootstrap.bundle.min.js" ></script>
-    <script src="../assets/js/swiper-bundle.min.js" ></script>
-    <!-- include counterup just in home page -->
-    <script src="../assets/js/jquery.counterup.min.js" ></script>
-    <script src="../assets/js/custom.js"></script>
-    <!-- end script ref  -->
-    <script>
 
-    var swiper = new Swiper(".mySwiper", {
-      pagination: {
-        el: ".swiper-pagination",
-      },
-    });
+  <!-- start script ref  -->
+  <script src="../assets/js/jQueryV3.5.js"></script>
+  <script src="../assets/js/bootstrap.bundle.minV5.js"></script>
+  <script src="../assets/js/swiper-bundle.min.js"></script>
+  <script src="../assets/js/jquery.counterup.min.js"></script>
+  <script src="../assets/js/custom.js"></script>
+  <!-- end script ref  -->
 
-    </script>
+</body>
 
-  </body>
 </html>
