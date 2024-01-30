@@ -149,16 +149,27 @@ button,
 .btnMainLight {
   background: #008e7d;
   border: 1px solid #008e7d;
+  &.bgWhite {
+    background: #fff;
+    color: #008E7D ;
+    path {
+        stroke: #008E7D;
+      }
+  }
   svg {
     margin-left: 10px;
   }
 }
 .font20 {
   font-size: 20px;
+  color: #464646;
+  font-weight: 600;
 }
 
 .font30 {
   font-size: 30px;
+  color: #464646;
+  font-weight: 600;
 }
 p {
   line-height: normal;
@@ -256,6 +267,7 @@ p {
     .dropdown-menu {
       width: 330px;
       #{$start-direction}: 0;
+      border-radius: 8px;
       top: 51px;
       border-radius: 0px 0px 8px 8px;
       box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
@@ -833,9 +845,24 @@ p {
   min-height: 200px;
   background: #fff url(../images/BGLegan.svg) no-repeat;
   text-align: center;
-  padding: 9px 11px;
+  padding: 9px 11px 40px 11px;
   border-radius: 10px;
   height: 100%;
+  &.BoxUser {
+    border: 1px solid #DADADA;
+    .textLegan {
+        .p18 {
+            font-size: 14px;
+            font-family: "SomarRegular";
+        }
+        .font15 a ,
+        .font15 {
+            color: #464646;
+            font-size: 14px;
+            font-family: "SomarLight";
+        }
+    }
+  }
   .actionsLegan {
     position: relative;
     text-align: left;
@@ -967,9 +994,59 @@ p {
   cursor: unset;
   opacity: 0.5;
 }
-
-
-
+.accordionCustom {
+    margin-top: 20px;
+    .accordion-button:focus {
+        border-color: unset;
+        box-shadow: unset;
+    }
+    .accordion-item {
+        border: 1px solid #EEF1F4;
+        margin-bottom: 20px;
+        .accordion-header {
+            .accordion-button {
+                background: #EEF1F4;
+                justify-content: space-between;
+                color: #464646;
+                font-size: 18px;
+                font-weight: 600;
+                &::after {
+                    margin: 0;
+                    background-image: url(../images/ArrowAcc.svg);
+                }
+                &:not(.collapsed) {
+                    background: #008E7D;
+                    color: #fff;
+                    &::after {
+                        filter: brightness(0) invert(1);
+                    }
+                }
+            }
+        }
+    }
+    .accordion-body {
+        .customWidthRow {
+            margin-top: 0;
+        }
+        padding: 23px 0 20px;
+    }
+}
+.addMemnerBox {
+    background: #EEF1F4;
+    border-radius: 10px;
+    display: flex;
+    padding: 0px 6px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    .font20 {
+        color: #464646;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+}
 /*
     transform: scale(0.5,0.5);
     transform-origin: center;
@@ -979,3 +1056,8 @@ p {
     left: -50%;
 
 */
+body {
+    background: #fff;
+    font-family: "SomarRegular";
+    text-align: right;
+}

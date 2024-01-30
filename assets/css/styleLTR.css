@@ -345,16 +345,29 @@ button,
   border: 1px solid #008e7d;
 }
 
+.btnMainLight.bgWhite {
+  background: #fff;
+  color: #008E7D;
+}
+
+.btnMainLight.bgWhite path {
+  stroke: #008E7D;
+}
+
 .btnMainLight svg {
   margin-left: 10px;
 }
 
 .font20, .navbarCustomSaso .navbar-light .navbar-nav .nav-link span, .homeSlider .wrapperSlide .textBanner p, .homeNumber .boxNum .numberCountUp span {
   font-size: 20px;
+  color: #464646;
+  font-weight: 600;
 }
 
 .font30 {
   font-size: 30px;
+  color: #464646;
+  font-weight: 600;
 }
 
 p {
@@ -468,6 +481,7 @@ p {
 .navbarCustomSaso .notificationA .dropdown-menu {
   width: 330px;
   left: 0;
+  border-radius: 8px;
   top: 51px;
   border-radius: 0px 0px 8px 8px;
   -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
@@ -1093,9 +1107,25 @@ p {
   min-height: 200px;
   background: #fff url(../images/BGLegan.svg) no-repeat;
   text-align: center;
-  padding: 9px 11px;
+  padding: 9px 11px 40px 11px;
   border-radius: 10px;
   height: 100%;
+}
+
+.mainWhiteBox.BoxUser {
+  border: 1px solid #DADADA;
+}
+
+.mainWhiteBox.BoxUser .textLegan .p18 {
+  font-size: 14px;
+  font-family: "SomarRegular";
+}
+
+.mainWhiteBox.BoxUser .textLegan .font15 a,
+.mainWhiteBox.BoxUser .textLegan .font15 {
+  color: #464646;
+  font-size: 14px;
+  font-family: "SomarLight";
 }
 
 .mainWhiteBox .actionsLegan {
@@ -1259,6 +1289,81 @@ p {
   opacity: 0.5;
 }
 
+.accordionCustom {
+  margin-top: 20px;
+}
+
+.accordionCustom .accordion-button:focus {
+  border-color: unset;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+.accordionCustom .accordion-item {
+  border: 1px solid #EEF1F4;
+  margin-bottom: 20px;
+}
+
+.accordionCustom .accordion-item .accordion-header .accordion-button {
+  background: #EEF1F4;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #464646;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.accordionCustom .accordion-item .accordion-header .accordion-button::after {
+  margin: 0;
+  background-image: url(../images/ArrowAcc.svg);
+}
+
+.accordionCustom .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  background: #008E7D;
+  color: #fff;
+}
+
+.accordionCustom .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.accordionCustom .accordion-body {
+  padding: 23px 0 20px;
+}
+
+.accordionCustom .accordion-body .customWidthRow {
+  margin-top: 0;
+}
+
+.addMemnerBox {
+  background: #EEF1F4;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 6px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.addMemnerBox .font20, .addMemnerBox .navbarCustomSaso .navbar-light .navbar-nav .nav-link span, .navbarCustomSaso .navbar-light .navbar-nav .nav-link .addMemnerBox span, .addMemnerBox .homeSlider .wrapperSlide .textBanner p, .homeSlider .wrapperSlide .textBanner .addMemnerBox p, .addMemnerBox .homeNumber .boxNum .numberCountUp span, .homeNumber .boxNum .numberCountUp .addMemnerBox span {
+  color: #464646;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
 /*
     transform: scale(0.5,0.5);
     transform-origin: center;
@@ -1268,6 +1373,12 @@ p {
     left: -50%;
 
 */
+body {
+  background: #fff;
+  font-family: "SomarRegular";
+  text-align: right;
+}
+
 @media (min-width: 1800px) {
   .WrapperContent > .container {
     max-width: 1400px;
