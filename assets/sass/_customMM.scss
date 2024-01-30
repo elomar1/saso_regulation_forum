@@ -181,17 +181,17 @@
         .inputSearch{
             margin-bottom: 0;
             input{
-                font-size: 16px;
+                font-size: 14px;
                 width: 380px;
             }
             .btnMain{
                 width: 90px;
-                font-size: 16px;
+                font-size: 14px;
             }
         }
     }
     .add-btn{
-        font-size: 16px;
+        font-size: 14px;
         font-weight: $w-bold;
         color: #008E7D;
         background-color: #fff;
@@ -292,11 +292,15 @@
             font-size: 16px;
             padding: 10px 14px;
         }
+        .filePoundClass {
+            max-width: 550px;
+        }
     }
     .btnMain{
         width: 90px;
         height: 40px;
         margin-bottom: 30px;
+        font-size: 14px;
     }
 }
 
@@ -331,6 +335,7 @@
         }
         .comment-added{
             padding-#{$start-direction}: 60px;
+            position: relative;
             p{
                 font-size: 18px;
                 font-weight: $w-medium;
@@ -355,6 +360,43 @@
                     font-weight: $w-medium;
                     color: $color6C788D;
                     margin-#{$start-direction}: 15px ;
+                }
+            }
+
+
+            .actionsLegan{
+                .moreAction{
+                    position: absolute;
+                    #{$end-direction}:15px;
+                    top: 10px;
+                    width: 18px;
+                    height: 18px;
+                }
+                .moreBox {
+                    position: absolute;
+                    #{$end-direction}: 12px;
+                    top: 35px;                
+                    background: #eef1f4;
+                    border: 1px solid #eef1f4;
+                    min-width: 120px;
+                    min-height: 85px;
+                    width: auto;
+                    height: auto;
+                    text-align: right;
+                    padding: 16px 14px;
+                    border-radius: 5px;
+                    display: none;
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        margin-bottom: 10px;
+                        img{
+                            margin-#{$end-direction}: 12px;
+                        }
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
                 }
             }
         }
@@ -434,6 +476,44 @@
         }
         .reply-added{
             padding-#{$start-direction}: 50px;
+            position: relative;
+
+            .actionsLegan{
+                .moreAction{
+                    position: absolute;
+                    #{$end-direction}:15px;
+                    top: 10px;
+                    width: 18px;
+                    height: 18px;
+                }
+                .moreBox {
+                    position: absolute;
+                    #{$end-direction}: 12px;
+                    top: 35px;                
+                    background: #eef1f4;
+                    border: 1px solid #eef1f4;
+                    min-width: 120px;
+                    min-height: 85px;
+                    width: auto;
+                    height: auto;
+                    text-align: right;
+                    padding: 16px 14px;
+                    border-radius: 5px;
+                    display: none;
+                    a{
+                        display: block;
+                        text-decoration: none;
+                        margin-bottom: 10px;
+                        img{
+                            margin-#{$end-direction}: 12px;
+                        }
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+
             .content-sec{
                 border: 1px solid #EEF1F4;
                 border-radius: 6px ;
@@ -518,4 +598,21 @@
   &::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+}
+
+#addingLN{
+    .modal-dialog{
+        .modal-content{
+            .modal-body{
+                .form{
+                    p.basic{
+                        font-size: 18px;
+                        font-weight: $w-medium;
+                        color: $color6C788D;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
 }

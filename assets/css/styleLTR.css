@@ -359,17 +359,17 @@ ol li {
 }
 
 .tabs-top-area .searchWarper .inputSearch input {
-  font-size: 16px;
+  font-size: 14px;
   width: 380px;
 }
 
 .tabs-top-area .searchWarper .inputSearch .btnMain, .tabs-top-area .searchWarper .inputSearch .btnMainWhite {
   width: 90px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .tabs-top-area .add-btn {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   color: #008E7D;
   background-color: #fff;
@@ -479,10 +479,15 @@ ol li {
   padding: 10px 14px;
 }
 
+.bottom-sec .add-attachments .filePoundClass {
+  max-width: 550px;
+}
+
 .bottom-sec .btnMain, .bottom-sec .btnMainWhite {
   width: 90px;
   height: 40px;
   margin-bottom: 30px;
+  font-size: 14px;
 }
 
 .comment-sec {
@@ -530,6 +535,7 @@ ol li {
 
 .comment-sec .comment-area .comment-added {
   padding-left: 60px;
+  position: relative;
 }
 
 .comment-sec .comment-area .comment-added p {
@@ -557,6 +563,44 @@ ol li {
   font-weight: 500;
   color: #6C788D;
   margin-left: 15px;
+}
+
+.comment-sec .comment-area .comment-added .actionsLegan .moreAction {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.comment-sec .comment-area .comment-added .actionsLegan .moreBox {
+  position: absolute;
+  right: 12px;
+  top: 35px;
+  background: #eef1f4;
+  border: 1px solid #eef1f4;
+  min-width: 120px;
+  min-height: 85px;
+  width: auto;
+  height: auto;
+  text-align: right;
+  padding: 16px 14px;
+  border-radius: 5px;
+  display: none;
+}
+
+.comment-sec .comment-area .comment-added .actionsLegan .moreBox a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.comment-sec .comment-area .comment-added .actionsLegan .moreBox a img {
+  margin-right: 12px;
+}
+
+.comment-sec .comment-area .comment-added .actionsLegan .moreBox a:last-child {
+  margin-bottom: 0;
 }
 
 .comment-sec.with-reply .comment-area {
@@ -644,6 +688,45 @@ ol li {
 
 .comment-sec .reply-area .reply-added {
   padding-left: 50px;
+  position: relative;
+}
+
+.comment-sec .reply-area .reply-added .actionsLegan .moreAction {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.comment-sec .reply-area .reply-added .actionsLegan .moreBox {
+  position: absolute;
+  right: 12px;
+  top: 35px;
+  background: #eef1f4;
+  border: 1px solid #eef1f4;
+  min-width: 120px;
+  min-height: 85px;
+  width: auto;
+  height: auto;
+  text-align: right;
+  padding: 16px 14px;
+  border-radius: 5px;
+  display: none;
+}
+
+.comment-sec .reply-area .reply-added .actionsLegan .moreBox a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.comment-sec .reply-area .reply-added .actionsLegan .moreBox a img {
+  margin-right: 12px;
+}
+
+.comment-sec .reply-area .reply-added .actionsLegan .moreBox a:last-child {
+  margin-bottom: 0;
 }
 
 .comment-sec .reply-area .reply-added .content-sec {
@@ -726,6 +809,13 @@ ol li {
 
 #nav-projects::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+#addingLN .modal-dialog .modal-content .modal-body .form p.basic {
+  font-size: 18px;
+  font-weight: 500;
+  color: #6C788D;
+  margin-bottom: 5px;
 }
 
 body {
