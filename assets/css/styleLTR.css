@@ -194,6 +194,27 @@ ol li {
   padding-right: 15px;
 }
 
+.mainCards.mainCards5 .col-lg-3 {
+  width: 20%;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.mainCards.mainCards5 .mainCard {
+  min-height: 110px;
+  background-position: 20px 45px;
+}
+
+.mainCards.mainCards5 .mainCard h4 {
+  font-size: 16px;
+}
+
+.mainCards.mainCards5 .mainCard .counter span {
+  font-size: 12px;
+  color: inherit;
+  font-family: 'SomarRegular';
+}
+
 .mainCards .mainCard {
   border-radius: 10px;
   background-color: #fff;
@@ -223,6 +244,7 @@ ol li {
   font-weight: 700;
   color: #464646;
   margin-bottom: 8px;
+  line-height: 1.5;
 }
 
 .mainCards .mainCard .counter {
@@ -282,6 +304,14 @@ ol li {
 
 .mainCards .mainCard.color4 .progress .progress-bar {
   background-color: #529C44;
+}
+
+.mainCards .mainCard.color5 .counter {
+  color: #61C4BD;
+}
+
+.mainCards .mainCard.color5 .progress .progress-bar {
+  background-color: #61C4BD;
 }
 
 .tabs-sec {
@@ -816,6 +846,52 @@ ol li {
   font-weight: 500;
   color: #6C788D;
   margin-bottom: 5px;
+}
+
+ul.PrStages-data {
+  margin-top: 15px;
+}
+
+ul.PrStages-data li {
+  margin-bottom: 15px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(108, 120, 141, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+ul.PrStages-data li:last-child {
+  border-bottom: none;
+}
+
+ul.PrStages-data li h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #464646;
+  margin-bottom: 0;
+  width: 240px;
+}
+
+ul.PrStages-data li p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6C788D;
+  margin-bottom: 0;
+}
+
+ul.PrStages-data li a {
+  display: block;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #066058;
+  opacity: 0.8;
 }
 
 body {
