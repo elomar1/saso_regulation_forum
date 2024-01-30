@@ -55,7 +55,7 @@
         justify-content: center;
         align-items: center;
         h4{
-            font-size: 20px;
+            font-size: 18px;
             font-weight: $w-bold;
             color: $pColor464646;
             margin-bottom: 8px;
@@ -65,10 +65,11 @@
             font-size: 33px;
             font-weight: $w-medium;
             margin-bottom: 8px;
-            line-height: 30px;
+            line-height: 45px;
+            font-family: "Inter";
         }
         &.with-progress{
-            min-height: 110px;
+            min-height: 120px;
             .progress{
                 height: 6px;
                 width: 100%;
@@ -162,7 +163,7 @@
 
 .tab-content{
     padding-top: 17px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     padding-#{$start-direction}:20px ;
     padding-#{$end-direction}:30px ;
     background-color: #fff;
@@ -190,7 +191,7 @@
         }
     }
     .add-btn{
-        font-size: 20px;
+        font-size: 16px;
         font-weight: $w-bold;
         color: #008E7D;
         background-color: #fff;
@@ -228,7 +229,7 @@
                     font-size: 16px;
                     font-weight: $w-medium;
                     color: $color6C788D ;
-                    border-bottom: 1px solid $color6C788D !important;
+                    border-bottom: 1px solid rgba($color: $color6C788D , $alpha: 0.2) !important;
                     padding-top: 15px;
                     padding-bottom: 13px;
                 }
@@ -486,4 +487,35 @@
             }
         }
     }
+}
+
+#nav-projects{
+    height: 475px;
+    overflow-y: auto;
+    padding-#{$end-direction}:15px ;
+    overflow-x: hidden;
+
+    /* width */
+   &::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 20px;
+  }
+  
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #EEF1F4;
+    border-radius: 20px;
+
+  }
+   
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #008E7D; 
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 }

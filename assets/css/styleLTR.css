@@ -219,7 +219,7 @@ ol li {
 }
 
 .mainCards .mainCard h4 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   color: #464646;
   margin-bottom: 8px;
@@ -229,11 +229,12 @@ ol li {
   font-size: 33px;
   font-weight: 500;
   margin-bottom: 8px;
-  line-height: 30px;
+  line-height: 45px;
+  font-family: "Inter";
 }
 
 .mainCards .mainCard.with-progress {
-  min-height: 110px;
+  min-height: 120px;
 }
 
 .mainCards .mainCard.with-progress .progress {
@@ -328,7 +329,7 @@ ol li {
 
 .tab-content {
   padding-top: 17px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   padding-left: 20px;
   padding-right: 30px;
   background-color: #fff;
@@ -368,7 +369,7 @@ ol li {
 }
 
 .tabs-top-area .add-btn {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   color: #008E7D;
   background-color: #fff;
@@ -404,7 +405,7 @@ ol li {
   font-size: 16px;
   font-weight: 500;
   color: #6C788D;
-  border-bottom: 1px solid #6C788D !important;
+  border-bottom: 1px solid rgba(108, 120, 141, 0.2) !important;
   padding-top: 15px;
   padding-bottom: 13px;
 }
@@ -695,6 +696,36 @@ ol li {
   font-weight: 500;
   color: #6C788D;
   margin-left: 15px;
+}
+
+#nav-projects {
+  height: 475px;
+  overflow-y: auto;
+  padding-right: 15px;
+  overflow-x: hidden;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+#nav-projects::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 20px;
+}
+
+#nav-projects::-webkit-scrollbar-track {
+  background: #EEF1F4;
+  border-radius: 20px;
+}
+
+#nav-projects::-webkit-scrollbar-thumb {
+  background: #008E7D;
+  border-radius: 20px;
+}
+
+#nav-projects::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 body {
