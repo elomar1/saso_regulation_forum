@@ -1183,3 +1183,21 @@ p {
         background: rgba(141, 83, 22, 0.6);
     } 
 }
+
+.tableOne.BrownColor .table thead tr th {
+    color: #8D5316;
+}
+.tableOne.BrownColor .table thead tr th {
+    color: rgba(141, 83, 22, 0.5);
+}
+.tableOne.BrownColor .table tbody tr th,
+.tableOne.BrownColor thead tr th:not(:nth-of-type(2)),
+.tableOne.BrownColor td:not(:nth-of-type(1)) {
+    text-align: center;
+}
+.tableOne .table tbody tr th {
+
+}
+.tableOne.BrownColor .table thead tr th:nth-of-type(2) {
+    width: 50%;
+}
