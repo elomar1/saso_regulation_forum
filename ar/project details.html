@@ -128,8 +128,11 @@
                             <a href="#">
                                 اللجان 
                             </a>
-                            <span>
+                            <a href="#">
                                 لجنة اللوائح الفنية المعتمدة
+                            </a>
+                            <span>
+                                 التقرير الأسبوعي للفترة من 29 أكتوبر وحتى 5 ديسمبر 2023
                             </span>
                         </div>
                        </div>
@@ -143,17 +146,14 @@
                         </div>
                        </div>
                     </div>
-                    <div class="row customWidthRow mainCards">
+                    <div class="row customWidthRow mainCards mainCards5">
                         <div class="col-lg-3">
-                            <div class="mainCard with-progress color1">
+                            <div class="mainCard with-progress color5">
                                 <h4>
-                                    عدد المشاريع
+                                    عدد التعليقات
                                 </h4>
                                 <div class="counter">
-                                    130
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar"  style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    2
                                 </div>
                             </div>
                         </div>
@@ -161,13 +161,21 @@
                         <div class="col-lg-3">
                             <div class="mainCard with-progress color2">
                                 <h4>
-                                    عدد المشاريع الحالية
+                                    عدد المرفقات
                                 </h4>
                                 <div class="counter">
-                                    80
+                                     3
                                 </div>
-                                <div class="progress">
-                                    <div class="progress-bar"  style="width: 80%;" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="mainCard with-progress color1">
+                                <h4>
+                                    عدد الأعضاء
+                                </h4>
+                                <div class="counter">
+                                    5
                                 </div>
                             </div>
                         </div>
@@ -175,13 +183,10 @@
                         <div class="col-lg-3">
                             <div class="mainCard with-progress color3">
                                 <h4>
-                                    عدد المشاريع المنتهية
+                                    عدد الفرق المنبثقة
                                 </h4>
                                 <div class="counter">
-                                    50
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar"  style="width: 50%;" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    4
                                 </div>
                             </div>
                         </div>
@@ -189,13 +194,13 @@
                         <div class="col-lg-3">
                             <div class="mainCard with-progress color4">
                                 <h4>
-                                    عدد الاجتماعات
+                                    الوقت المتبقي لنهاية المشروع
                                 </h4>
                                 <div class="counter">
-                                    15
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar"  style="width: 15%;" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                  3
+                                  <span>
+                                    يوم
+                                 </span>
                                 </div>
                             </div>
                         </div>
@@ -205,17 +210,17 @@
                         <div class="col-12">
                             <nav>
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                  <button class="nav-link active" id="nav-projects-tab" data-bs-toggle="tab" data-bs-target="#nav-projects" type="button" role="tab" aria-controls="nav-projects" aria-selected="true">
+                                  <button class="nav-link active" id="nav-PrStages-tab" data-bs-toggle="tab" data-bs-target="#nav-PrStages" type="button" role="tab" aria-controls="nav-PrStages" aria-selected="true">
                                     <div class="icon-box">
                                         <img src="../assets/images/projectTab-icon.svg" alt="">
                                     </div>
-                                    مشاريع اللجنة
+                                    بيانات المشروع
                                 </button>
                                   <button class="nav-link" id="nav-technicalCommittee-tab" data-bs-toggle="tab" data-bs-target="#nav-technicalCommittee" type="button" role="tab" aria-controls="nav-technicalCommittee" aria-selected="false">
                                     <div class="icon-box">
-                                        <img src="../assets/images/teamTab-icon..svg" alt="">
+                                        <img src="../assets/images/PrStages-icon.svg" alt="">
                                     </div>
-                                    أعضاء اللجنة الفنية
+                                    مراحل المشروع
                                 </button>
                                   <button class="nav-link" id="nav-teams-tab" data-bs-toggle="tab" data-bs-target="#nav-teams" type="button" role="tab" aria-controls="nav-teams" aria-selected="false">
                                      <div class="icon-box">
@@ -238,475 +243,100 @@
                                 </div>
                               </nav>
                               <div class="tab-content" id="nav-tabContent">
-                                <div class="tab-pane fade show active" id="nav-projects" role="tabpanel" aria-labelledby="nav-projects-tab">
+                                <div class="tab-pane fade show active" id="nav-PrStages" role="tabpanel" aria-labelledby="nav-PrStages-tab">
                                     <div class="row">
-                                        <div class="col-12">
-                                            <div class="tabs-top-area">
-                                                <div class="searchWarper">
-                                                    <div class="inputGroup inputSearch">
-                                                        <input type="text" placeholder="بحث في المشاريع">
-                                                        <button class="btnMain">بحث</button>
-                                                    </div>
-                                                </div>
-                                                <div class="">
-                                                    <button class="add-btn" data-bs-toggle="modal" data-bs-target="#addingLN">
-                                                        <img src="../assets/images/plus-circle-filled.svg" alt="">
-                                                        إضافة مشروع جديد
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="tableOne table-responsive">
-                                                <table class="table">
-                                                    <thead>
-                                                      <tr>
-                                                        <th scope="col">
-                                                            م
-                                                        </th>
-                                                        <th scope="col">
-                                                            اسم المشروع
-                                                        </th>
-                                                        <th scope="col">
-                                                            المرحلة
-                                                        </th>
-                                                        <th scope="col">
-                                                            تاريخ الانتهاء
-                                                        </th>
-                                                      </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                      <tr>
-                                                        <th scope="row">
-                                                            1
-                                                        </th>
-                                                        <td>
-                                                            التقرير الأسبوعي للفترة من 29 أكتوبر وحتى 5 ديسمبر 2023
-                                                        </td>
-                                                        <td>
-                                                            الأولى
-                                                        </td>
-                                                        <td>
-                                                            31/12/2024
-                                                        </td>
-                                                      </tr>
-                                                      <tr>
-                                                        <th scope="row">
-                                                            2
-                                                        </th>
-                                                        <td>
-                                                            الدليل الاسترشادي للائحة الفنية لسلامة الآلات 
-                                                        </td>
-                                                        <td>
-                                                            الثالثة
-                                                        </td>
-                                                        <td>
-                                                            31/12/2024
-                                                        </td>
-                                                      </tr>
-                                                      <tr>
-                                                        <th scope="row">
-                                                            3
-                                                        </th>
-                                                        <td  >
-                                                            تجربة المراجعة الداخلية
-                                                        </td>
-                                                        <td>
-                                                            الثانية
-                                                        </td>
-                                                        <td>
-                                                            31/12/2024
-                                                        </td>
-                                                      </tr>
-                                                      <tr>
-                                                        <th scope="row">
-                                                            4
-                                                        </th>
-                                                        <td  >
-                                                            تعديل اللائحة الفنية لأدوات ترشيد استهلاك المياه
-                                                        </td>
-                                                        <td>
-                                                            الأولى
-                                                        </td>
-                                                        <td>
-                                                            31/12/2024
-                                                        </td>
-                                                      </tr>
-                                                      <tr>
-                                                        <th scope="row">
-                                                            5
-                                                        </th>
-                                                        <td  >
-                                                            الدليل الاسترشادي للائحة الفنية لسلامة الآلات 
-                                                        </td>
-                                                        <td>
-                                                            الثالثة
-                                                        </td>
-                                                        <td>
-                                                            31/12/2024
-                                                        </td>
-                                                      </tr>
-                                                      <tr>
-                                                        <th scope="row">
-                                                            6
-                                                        </th>
-                                                        <td  >
-                                                            تجربة المراجعة الداخلية
-                                                        </td>
-                                                        <td>
-                                                            الثانية
-                                                        </td>
-                                                        <td>
-                                                            31/12/2024
-                                                        </td>
-                                                      </tr>
-                                                      <tr>
-                                                        <th scope="row">
-                                                            7
-                                                        </th>
-                                                        <td  >
-                                                            تعديل اللائحة الفنية لأدوات ترشيد استهلاك المياه
-                                                        </td>
-                                                        <td>
-                                                            الأولى
-                                                        </td>
-                                                        <td>
-                                                            31/12/2024
-                                                        </td>
-                                                      </tr>
-                                                    </tbody>
-                                                  </table>
-                                            </div>
-                                        </div>
+                                      <div class="col-12">
+                                        <ul class="PrStages-data">
+                                            <li class="">
+                                                <h4>
+                                                    اسم المشروع  (عربي)
+                                                </h4>
+                                                <p>
+                                                    التقرير الأسبوعي للفترة من 29 أكتوبر وحتى 5 ديسمبر 2023
+                                                </p>
+                                            </li>
+                                            <li class="">
+                                                <h4>
+                                                    القطاع
+                                                </h4>
+                                                <p>
+                                                    جميع القطاعات
+                                                </p>
+                                            </li>
+                                            <li class="">
+                                                <h4>
+                                                    اسم المشروع (إنجليزي)
+                                                </h4>
+                                                <p>
+                                                    Weekly report for the period from October 29 to December 5, 2023
+                                                </p>
+                                            </li>
+                                            <li class="">
+                                                <h4>
+                                                    أُنشئ بواسطة
+                                                </h4>
+                                                <p>
+                                                    عيسى عبد العزيز
+                                                </p>
+                                            </li>
+                                            <li class="">
+                                                <h4>
+                                                    تاريخ الإدخال
+                                                </h4>
+                                                <p>
+                                                    7 نوفمبر 2023
+                                                </p>
+                                            </li>
+                                            <li class="">
+                                                <h4>
+                                                    تاريخ الانتهاء
+                                                </h4>
+                                                <p>
+                                                    19 ديسمبر 2024
+                                                </p>
+                                            </li>
+                                            <li class="">
+                                                <h4>
+                                                    المرحلة
+                                                </h4>
+                                                <p>
+                                                    التقرير
+                                                </p>
+                                            </li>
+                                            <li class="">
+                                                <h4>
+                                                    الحالة
+                                                </h4>
+                                                <p>
+                                                    -----
+                                                </p>
+                                            </li>
+                                            <li class="">
+                                                <h4>
+                                                    المرفقات
+                                                </h4>
+                                               <p>
+
+                                                   <a href="#">
+                                                       ملاحظات على الفرق الفنية
+                                                   </a>
+                                                   <a href="#">
+                                                       التقرير المبدئي
+                                                   </a>
+                                                   <a href="#">
+                                                       التقرير النهائي
+                                                   </a>
+                                               </p>
+                                            </li>
+                                        </ul>
+                                      </div>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="nav-technicalCommittee" role="tabpanel" aria-labelledby="nav-technicalCommittee-tab">
-                                    <div class="row customWidthRow">
-                                        <div class="col-md-3 ">
-                                            <div class="mainWhiteBox BoxUser">
-                                                <div class="actionsLegan">
-                                                    <a href="#!" class="moreAction">
-                                                       <img src="../assets/images/MoreAction.svg" alt="">
-                                                    </a>
-                                                    <div class="moreBox">
-                                                        <a href="#!">
-                                                            <img src="../assets/images/Edit.svg" alt=""> 
-                                                            <span>تعديل</span>
-                                                        </a>
-                                                        <a href="#!">
-                                                            <img src="../assets/images/Change.svg" alt=""> 
-                                                            <span>تغيير الحالة</span>
-                                                        </a>
-                                                        <a href="#!">
-                                                            <img src="../assets/images/Trash.svg" alt=""> 
-                                                            <span>حذف</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="logoLegan">
-                                                    <img src="../assets/images/userIconMem.svg" alt="">
-                                                </div>
-                                                <div class="textLegan">
-                                                    <h3 class="font22">ضياء الدين سليمان بدر</h3>
-                                                    <p class="p18">رئيس اللجنة الفنية</p>
-                                                    <span class=" font15"> البريد الإلكتروني: <a href="#"> mail@saso.gov.sa</a></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end box -->
-                                        <div class="col-md-3 ">
-                                            <div class="mainWhiteBox BoxUser">
-                                                <div class="actionsLegan">
-                                                    <a href="#!" class="moreAction">
-                                                       <img src="../assets/images/MoreAction.svg" alt="">
-                                                    </a>
-                                                    <div class="moreBox">
-                                                        <a href="#!">
-                                                            <img src="../assets/images/Edit.svg" alt=""> 
-                                                            <span>تعديل</span>
-                                                        </a>
-                                                        <a href="#!">
-                                                            <img src="../assets/images/Change.svg" alt=""> 
-                                                            <span>تغيير الحالة</span>
-                                                        </a>
-                                                        <a href="#!">
-                                                            <img src="../assets/images/Trash.svg" alt=""> 
-                                                            <span>حذف</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="logoLegan">
-                                                    <img src="../assets/images/userIconMem.svg" alt="">
-                                                </div>
-                                                <div class="textLegan">
-                                                    <h3 class="font22">ضياء الدين سليمان بدر</h3>
-                                                    <p class="p18">رئيس اللجنة الفنية</p>
-                                                    <span class=" font15"> البريد الإلكتروني: <a href="#"> mail@saso.gov.sa</a></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end box -->
-                                        <div class="col-md-3 ">
-                                            <div class="mainWhiteBox BoxUser">
-                                                <div class="actionsLegan">
-                                                    <a href="#!" class="moreAction">
-                                                       <img src="../assets/images/MoreAction.svg" alt="">
-                                                    </a>
-                                                    <div class="moreBox">
-                                                        <a href="#!">
-                                                            <img src="../assets/images/Edit.svg" alt=""> 
-                                                            <span>تعديل</span>
-                                                        </a>
-                                                        <a href="#!">
-                                                            <img src="../assets/images/Change.svg" alt=""> 
-                                                            <span>تغيير الحالة</span>
-                                                        </a>
-                                                        <a href="#!">
-                                                            <img src="../assets/images/Trash.svg" alt=""> 
-                                                            <span>حذف</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="logoLegan">
-                                                    <img src="../assets/images/userIconMem.svg" alt="">
-                                                </div>
-                                                <div class="textLegan">
-                                                    <h3 class="font22">ضياء الدين سليمان بدر</h3>
-                                                    <p class="p18">رئيس اللجنة الفنية</p>
-                                                    <span class=" font15"> البريد الإلكتروني: <a href="#"> mail@saso.gov.sa</a></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end box -->
-                                        <div class="col-md-3 ">
-                                            <div class="mainWhiteBox BoxUser">
-                                                <div class="actionsLegan">
-                                                    <a href="#!" class="moreAction">
-                                                       <img src="../assets/images/MoreAction.svg" alt="">
-                                                    </a>
-                                                    <div class="moreBox">
-                                                        <a href="#!">
-                                                            <img src="../assets/images/Edit.svg" alt=""> 
-                                                            <span>تعديل</span>
-                                                        </a>
-                                                        <a href="#!">
-                                                            <img src="../assets/images/Change.svg" alt=""> 
-                                                            <span>تغيير الحالة</span>
-                                                        </a>
-                                                        <a href="#!">
-                                                            <img src="../assets/images/Trash.svg" alt=""> 
-                                                            <span>حذف</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="logoLegan">
-                                                    <img src="../assets/images/userIconMem.svg" alt="">
-                                                </div>
-                                                <div class="textLegan">
-                                                    <h3 class="font22">ضياء الدين سليمان بدر</h3>
-                                                    <p class="p18">رئيس اللجنة الفنية</p>
-                                                    <span class=" font15"> البريد الإلكتروني: <a href="#"> mail@saso.gov.sa</a></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end box -->
-
-                                        
-                                    </div>
+                                    ...
                                 </div>
                                 <div class="tab-pane fade" id="nav-teams" role="tabpanel" aria-labelledby="nav-teams-tab">
-                                    <div class="row ">
-                                        <!--  -->
-                                        <div class="col-md-12 text-right">
-                                            <button type="button" class="btnMainLight bgWhite">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                    <path d="M12 9V12M12 12V15M12 12H15M12 12H9M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                                <span>إضافة فريق جديدة</span>
-                                            </button>
-                                        </div>
-                                        <!-- col 12 -->
-                                        <div class="accordion accordionCustom" id="accordionSaso">
-                                            <div class="accordion-item">
-                                              <h2 class="accordion-header" id="headingOne">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                    الفريق الفني الأول
-                                                </button>
-                                              </h2>
-                                              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionSaso" style="">
-                                                <div class="accordion-body">
-                                                    <div class="row customWidthRow">
-                                                        <div class="col-md-3 ">
-                                                            <a href="#!" class="addMemnerBox">
-                                                                <img src="../assets/images/addUser.svg" alt="">
-                                                                <span class="font20">إضافة عضو جديد</span>
-                                                            </a>
-                                                        </div>
-                                                        <!-- end box -->
-                                                        <div class="col-md-3 ">
-                                                            <div class="mainWhiteBox BoxUser">
-                                                                <div class="actionsLegan">
-                                                                    <a href="#!" class="moreAction">
-                                                                       <img src="../assets/images/MoreAction.svg" alt="">
-                                                                    </a>
-                                                                    <div class="moreBox">
-                                                                        <a href="#!">
-                                                                            <img src="../assets/images/Edit.svg" alt=""> 
-                                                                            <span>تعديل</span>
-                                                                        </a>
-                                                                        <a href="#!">
-                                                                            <img src="../assets/images/Change.svg" alt=""> 
-                                                                            <span>تغيير الحالة</span>
-                                                                        </a>
-                                                                        <a href="#!">
-                                                                            <img src="../assets/images/Trash.svg" alt=""> 
-                                                                            <span>حذف</span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="logoLegan">
-                                                                    <img src="../assets/images/userIconMem.svg" alt="">
-                                                                </div>
-                                                                <div class="textLegan">
-                                                                    <h3 class="font22">ضياء الدين سليمان بدر</h3>
-                                                                    <p class="p18">رئيس اللجنة الفنية</p>
-                                                                    <span class=" font15"> البريد الإلكتروني: <a href="#"> mail@saso.gov.sa</a></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- end box -->
-                                                        <div class="col-md-3 ">
-                                                            <div class="mainWhiteBox BoxUser">
-                                                                <div class="actionsLegan">
-                                                                    <a href="#!" class="moreAction">
-                                                                       <img src="../assets/images/MoreAction.svg" alt="">
-                                                                    </a>
-                                                                    <div class="moreBox">
-                                                                        <a href="#!">
-                                                                            <img src="../assets/images/Edit.svg" alt=""> 
-                                                                            <span>تعديل</span>
-                                                                        </a>
-                                                                        <a href="#!">
-                                                                            <img src="../assets/images/Change.svg" alt=""> 
-                                                                            <span>تغيير الحالة</span>
-                                                                        </a>
-                                                                        <a href="#!">
-                                                                            <img src="../assets/images/Trash.svg" alt=""> 
-                                                                            <span>حذف</span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="logoLegan">
-                                                                    <img src="../assets/images/userIconMem.svg" alt="">
-                                                                </div>
-                                                                <div class="textLegan">
-                                                                    <h3 class="font22">ضياء الدين سليمان بدر</h3>
-                                                                    <p class="p18">رئيس اللجنة الفنية</p>
-                                                                    <span class=" font15"> البريد الإلكتروني: <a href="#"> mail@saso.gov.sa</a></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- end box -->
-                                                        <div class="col-md-3 ">
-                                                            <div class="mainWhiteBox BoxUser">
-                                                                <div class="actionsLegan">
-                                                                    <a href="#!" class="moreAction">
-                                                                       <img src="../assets/images/MoreAction.svg" alt="">
-                                                                    </a>
-                                                                    <div class="moreBox">
-                                                                        <a href="#!">
-                                                                            <img src="../assets/images/Edit.svg" alt=""> 
-                                                                            <span>تعديل</span>
-                                                                        </a>
-                                                                        <a href="#!">
-                                                                            <img src="../assets/images/Change.svg" alt=""> 
-                                                                            <span>تغيير الحالة</span>
-                                                                        </a>
-                                                                        <a href="#!">
-                                                                            <img src="../assets/images/Trash.svg" alt=""> 
-                                                                            <span>حذف</span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="logoLegan">
-                                                                    <img src="../assets/images/userIconMem.svg" alt="">
-                                                                </div>
-                                                                <div class="textLegan">
-                                                                    <h3 class="font22">ضياء الدين سليمان بدر</h3>
-                                                                    <p class="p18">رئيس اللجنة الفنية</p>
-                                                                    <span class=" font15"> البريد الإلكتروني: <a href="#"> mail@saso.gov.sa</a></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- end box -->
-                                                        <div class="col-md-3 ">
-                                                            <div class="mainWhiteBox BoxUser">
-                                                                <div class="actionsLegan">
-                                                                    <a href="#!" class="moreAction">
-                                                                       <img src="../assets/images/MoreAction.svg" alt="">
-                                                                    </a>
-                                                                    <div class="moreBox">
-                                                                        <a href="#!">
-                                                                            <img src="../assets/images/Edit.svg" alt=""> 
-                                                                            <span>تعديل</span>
-                                                                        </a>
-                                                                        <a href="#!">
-                                                                            <img src="../assets/images/Change.svg" alt=""> 
-                                                                            <span>تغيير الحالة</span>
-                                                                        </a>
-                                                                        <a href="#!">
-                                                                            <img src="../assets/images/Trash.svg" alt=""> 
-                                                                            <span>حذف</span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="logoLegan">
-                                                                    <img src="../assets/images/userIconMem.svg" alt="">
-                                                                </div>
-                                                                <div class="textLegan">
-                                                                    <h3 class="font22">ضياء الدين سليمان بدر</h3>
-                                                                    <p class="p18">رئيس اللجنة الفنية</p>
-                                                                    <span class=" font15"> البريد الإلكتروني: <a href="#"> mail@saso.gov.sa</a></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- end box -->
-                
-                                                        
-                                                    </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <!-- end single accordion -->
-                                            <div class="accordion-item">
-                                              <h2 class="accordion-header" id="headingTwo">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    الفريق الفني الثاني
-                                                </button>
-                                              </h2>
-                                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionSaso" style="">
-                                                <div class="accordion-body">
-                                                    same as above
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <!-- end single accordion -->
-                                            <div class="accordion-item">
-                                              <h2 class="accordion-header" id="headingThree">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                    الفريق الفني الثالث
-                                                </button>
-                                              </h2>
-                                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSaso">
-                                                <div class="accordion-body">
-                                                    same as above
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <!-- end single accordion -->
-                                          </div>
-                                        <!-- end  -->
-                                    </div>
+                                    ...
                                 </div>
                                 <div class="tab-pane fade" id="nav-meetings" role="tabpanel" aria-labelledby="nav-meetings-tab">
                                     <div class="row">

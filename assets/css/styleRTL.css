@@ -193,6 +193,27 @@ ol li {
   padding-right: 15px;
 }
 
+.mainCards.mainCards5 .col-lg-3 {
+  width: 20%;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.mainCards.mainCards5 .mainCard {
+  min-height: 110px;
+  background-position: 20px 45px;
+}
+
+.mainCards.mainCards5 .mainCard h4 {
+  font-size: 16px;
+}
+
+.mainCards.mainCards5 .mainCard .counter span {
+  font-size: 12px;
+  color: inherit;
+  font-family: 'SomarRegular';
+}
+
 .mainCards .mainCard {
   border-radius: 10px;
   background-color: #fff;
@@ -222,6 +243,7 @@ ol li {
   font-weight: 700;
   color: #464646;
   margin-bottom: 8px;
+  line-height: 1.5;
 }
 
 .mainCards .mainCard .counter {
@@ -281,6 +303,14 @@ ol li {
 
 .mainCards .mainCard.color4 .progress .progress-bar {
   background-color: #529C44;
+}
+
+.mainCards .mainCard.color5 .counter {
+  color: #61C4BD;
+}
+
+.mainCards .mainCard.color5 .progress .progress-bar {
+  background-color: #61C4BD;
 }
 
 .tabs-sec {
@@ -358,17 +388,17 @@ ol li {
 }
 
 .tabs-top-area .searchWarper .inputSearch input {
-  font-size: 16px;
+  font-size: 14px;
   width: 380px;
 }
 
 .tabs-top-area .searchWarper .inputSearch .btnMain, .tabs-top-area .searchWarper .inputSearch .btnMainWhite {
   width: 90px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .tabs-top-area .add-btn {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   color: #008E7D;
   background-color: #fff;
@@ -478,10 +508,15 @@ ol li {
   padding: 10px 14px;
 }
 
+.bottom-sec .add-attachments .filePoundClass {
+  max-width: 550px;
+}
+
 .bottom-sec .btnMain, .bottom-sec .btnMainWhite {
   width: 90px;
   height: 40px;
   margin-bottom: 30px;
+  font-size: 14px;
 }
 
 .comment-sec {
@@ -529,6 +564,7 @@ ol li {
 
 .comment-sec .comment-area .comment-added {
   padding-right: 60px;
+  position: relative;
 }
 
 .comment-sec .comment-area .comment-added p {
@@ -556,6 +592,44 @@ ol li {
   font-weight: 500;
   color: #6C788D;
   margin-right: 15px;
+}
+
+.comment-sec .comment-area .comment-added .actionsLegan .moreAction {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.comment-sec .comment-area .comment-added .actionsLegan .moreBox {
+  position: absolute;
+  left: 12px;
+  top: 35px;
+  background: #eef1f4;
+  border: 1px solid #eef1f4;
+  min-width: 120px;
+  min-height: 85px;
+  width: auto;
+  height: auto;
+  text-align: right;
+  padding: 16px 14px;
+  border-radius: 5px;
+  display: none;
+}
+
+.comment-sec .comment-area .comment-added .actionsLegan .moreBox a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.comment-sec .comment-area .comment-added .actionsLegan .moreBox a img {
+  margin-left: 12px;
+}
+
+.comment-sec .comment-area .comment-added .actionsLegan .moreBox a:last-child {
+  margin-bottom: 0;
 }
 
 .comment-sec.with-reply .comment-area {
@@ -643,6 +717,45 @@ ol li {
 
 .comment-sec .reply-area .reply-added {
   padding-right: 50px;
+  position: relative;
+}
+
+.comment-sec .reply-area .reply-added .actionsLegan .moreAction {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.comment-sec .reply-area .reply-added .actionsLegan .moreBox {
+  position: absolute;
+  left: 12px;
+  top: 35px;
+  background: #eef1f4;
+  border: 1px solid #eef1f4;
+  min-width: 120px;
+  min-height: 85px;
+  width: auto;
+  height: auto;
+  text-align: right;
+  padding: 16px 14px;
+  border-radius: 5px;
+  display: none;
+}
+
+.comment-sec .reply-area .reply-added .actionsLegan .moreBox a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.comment-sec .reply-area .reply-added .actionsLegan .moreBox a img {
+  margin-left: 12px;
+}
+
+.comment-sec .reply-area .reply-added .actionsLegan .moreBox a:last-child {
+  margin-bottom: 0;
 }
 
 .comment-sec .reply-area .reply-added .content-sec {
@@ -725,6 +838,59 @@ ol li {
 
 #nav-projects::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+#addingLN .modal-dialog .modal-content .modal-body .form p.basic {
+  font-size: 18px;
+  font-weight: 500;
+  color: #6C788D;
+  margin-bottom: 5px;
+}
+
+ul.PrStages-data {
+  margin-top: 15px;
+}
+
+ul.PrStages-data li {
+  margin-bottom: 15px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(108, 120, 141, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+ul.PrStages-data li:last-child {
+  border-bottom: none;
+}
+
+ul.PrStages-data li h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #464646;
+  margin-bottom: 0;
+  width: 240px;
+}
+
+ul.PrStages-data li p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6C788D;
+  margin-bottom: 0;
+}
+
+ul.PrStages-data li a {
+  display: block;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #066058;
+  opacity: 0.8;
 }
 
 body {
@@ -2105,7 +2271,7 @@ p {
 }
 
 .tableOne.BrownColor .table thead tr th {
-  color: rgba(141, 83, 22, 0.5);
+  border-bottom: 1.5px solid rgba(141, 83, 22, 0.5) !important;
 }
 
 .tableOne.BrownColor .table tbody tr th,
