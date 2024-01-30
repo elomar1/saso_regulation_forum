@@ -1956,14 +1956,6 @@ p {
   font-weight: 600;
 }
 
-.MainGreen {
-  color: #529C44;
-}
-
-.Brown {
-  color: #8D5316;
-}
-
 .titleDash {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1976,6 +1968,14 @@ p {
   font-style: normal;
   font-weight: 600;
   margin-bottom: 10px;
+}
+
+.titleDash.MainGreen {
+  color: #529C44;
+}
+
+.titleDash.Brown {
+  color: #8D5316;
 }
 
 .chartCRL {
