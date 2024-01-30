@@ -5,6 +5,9 @@
             max-width: 1400px;
         }
     }
+    .containerCustom {
+        max-width: 1400px;
+    }
 }
 @media (min-width: 1400px) {
     .homeSlider .wrapperSlide {
@@ -13,7 +16,12 @@
     }
 }
 @media (min-width: 1200px) {
-    .containerCustom {
-        max-width: 1300px;
-    }
+    // .WrapperContent {
+    //     > .container {
+    //         max-width: 1300px;
+    //     }
+    // }
+    // .containerCustom {
+    //     max-width: 1300px;
+    // }
 }

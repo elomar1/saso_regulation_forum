@@ -9,7 +9,7 @@ img {
   max-width: 100%;
 }
 a {
-  color: #008e7d;
+  color: $green008E7D;
   text-decoration: none;
 }
 a:hover {
@@ -147,13 +147,13 @@ button,
   border: 1px solid #066058;
 }
 .btnMainLight {
-  background: #008e7d;
-  border: 1px solid #008e7d;
+  background: $green008E7D;
+  border: 1px solid $green008E7D;
   &.bgWhite {
     background: #fff;
-    color: #008E7D ;
+    color: $green008E7D ;
     path {
-        stroke: #008E7D;
+        stroke: $green008E7D;
       }
   }
   svg {
@@ -478,7 +478,7 @@ p {
     justify-content: flex-end;
     background: linear-gradient(
       270deg,
-      #008e7d 0%,
+      $green008E7D 0%,
       rgba(255, 255, 255, 0) 71.9%
     );
     .aboImg {
@@ -508,6 +508,10 @@ p {
         @extend .font20;
         margin-bottom: 30px;
         width: 77%;
+        color: #fff;
+        font-family: "SomarLight";
+        font-weight: unset;
+
       }
     }
   }
@@ -516,7 +520,7 @@ p {
     opacity: 1;
   }
   .swiper-pagination-bullet-active {
-    background: #008e7d;
+    background: $green008E7D;
   }
 }
 .homeNumber {
@@ -565,10 +569,10 @@ p {
     }
   }
   .col-md-4:nth-of-type(2) .boxNum::after {
-    background-color: #529c44;
+    background-color: $MainGreen529C44;
   }
   .col-md-4:nth-of-type(1) .boxNum::after {
-    background-color: #8d5316;
+    background-color: $Brown8D5316;
   }
 }
 
@@ -653,6 +657,9 @@ p {
     border: 1px solid #eef1f4;
     padding: 9px 5px;
     text-decoration: unset;
+    > img {
+        max-width: 50px;  
+    }
     p {
       margin: 0;
       margin-right: 10px;
@@ -696,7 +703,7 @@ p {
     max-width: 1000px;
   }
   .titleModal {
-    color: #008e7d;
+    color: $green008E7D;
     font-size: 30px;
     margin-bottom: 30px;
   }
@@ -821,7 +828,7 @@ p {
   }
   .searchAdv {
     font-size: 16px;
-    color: #008e7d;
+    color: $green008E7D;
     text-decoration: underline;
   }
 }
@@ -1015,7 +1022,7 @@ p {
                     background-image: url(../images/ArrowAcc.svg);
                 }
                 &:not(.collapsed) {
-                    background: #008E7D;
+                    background: $green008E7D;
                     color: #fff;
                     &::after {
                         filter: brightness(0) invert(1);
@@ -1056,8 +1063,128 @@ p {
     left: -50%;
 
 */
-body {
-    background: #fff;
+.apexcharts-text tspan {
     font-family: "SomarRegular";
-    text-align: right;
+    font-size: 10px;
+}
+.apexcharts-legend-marker {
+    border-radius: 50px !important;
+    margin-left: 5px;
+}
+.apexcharts-legend-text {
+    font-size: 10px !important;
+}
+.bgWhite {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    height: 95%;
+}
+.viewAll {
+    color: #6C788D;
+    font-size: 16px;
+    font-weight: 600;
+}
+.MainGreen {
+    color: $MainGreen529C44;
+}
+.Brown {
+    color: $Brown8D5316;
+}
+.titleDash {
+    display: flex;
+    justify-content: space-between;
+    color: $green008E7D;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 10px;
+    // &.MainGreen {
+    //     color: $MainGreen529C44;
+    // }
+    // &.Brown {
+    //     color: $Brown8D5316;
+    // }
+}
+.chartCRL { 
+    justify-content: space-evenly;
+    // margin-bottom: 30px;
+    p {
+        margin: 0;
+        span {
+            font-size: 14px;
+            color: #464646;
+            &.circle {
+                width: 10px;
+                height: 10px;
+                display: inline-block;
+                background: #61C4BD;
+                border-radius: 50px;
+                margin-left: 5px;
+                &.darkCrc {
+                    background: #066058;
+                }
+                &.MainGreenBG {
+                    background: $MainGreen529C44;
+                }
+                &.BrownBG {
+                    background: $Brown8D5316;
+                }
+            }
+        }
+    }
+
+}
+.chartsSection {
+    margin-bottom: 60px; 
+    .mrgTop {
+        .col-md-4,
+        .col-md-8 {
+            margin-top: 50px;
+        }
+     
+    }
+}
+.wrapperDash {
+    @extend .bgWhite;
+    padding: 20px;
+}
+.DashBox {
+    min-height: 100px;
+    background: #61C4BD;
+    border-radius: 10px;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    padding: 16px 10px;
+    height: 80%;
+    img {
+        margin-bottom: 6px;
+    }
+    span {
+        font-size: 12px;
+        font-family: "SomarLight";
+        opacity: .8;
+    }
+}
+.swiperSection {
+    padding: 30px 0;
+}
+.CommitteesColor {
+    .swiper-pagination-bullet-active {
+        background: #61C4BD;
+    } 
+}
+.ProjectColor  {
+    .DashBox,
+    .swiper-pagination-bullet-active {
+        background:rgba(83, 156, 68, 0.6);
+    } 
+}
+.MeetingColor  {
+    .DashBox,
+    .swiper-pagination-bullet-active {
+        background: rgba(141, 83, 22, 0.6);
+    } 
 }
