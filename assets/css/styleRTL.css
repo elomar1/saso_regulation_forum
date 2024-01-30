@@ -740,7 +740,7 @@ img {
 }
 
 a {
-  color: #008e7d;
+  color: #008E7D;
   text-decoration: none;
 }
 
@@ -921,8 +921,17 @@ button,
 }
 
 .btnMainLight {
-  background: #008e7d;
-  border: 1px solid #008e7d;
+  background: #008E7D;
+  border: 1px solid #008E7D;
+}
+
+.btnMainLight.bgWhite, .btnMainLight.wrapperDash {
+  background: #fff;
+  color: #008E7D;
+}
+
+.btnMainLight.bgWhite path, .btnMainLight.wrapperDash path {
+  stroke: #008E7D;
 }
 
 .btnMainLight svg {
@@ -931,10 +940,14 @@ button,
 
 .font20, .navbarCustomSaso .navbar-light .navbar-nav .nav-link span, .homeSlider .wrapperSlide .textBanner p, .homeNumber .boxNum .numberCountUp span {
   font-size: 20px;
+  color: #464646;
+  font-weight: 600;
 }
 
 .font30 {
   font-size: 30px;
+  color: #464646;
+  font-weight: 600;
 }
 
 p {
@@ -1048,6 +1061,7 @@ p {
 .navbarCustomSaso .notificationA .dropdown-menu {
   width: 330px;
   right: 0;
+  border-radius: 8px;
   top: 51px;
   border-radius: 0px 0px 8px 8px;
   -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
@@ -1261,8 +1275,8 @@ p {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background: -webkit-gradient(linear, right top, left top, from(#008e7d), color-stop(71.9%, rgba(255, 255, 255, 0)));
-  background: linear-gradient(270deg, #008e7d 0%, rgba(255, 255, 255, 0) 71.9%);
+  background: -webkit-gradient(linear, right top, left top, from(#008E7D), color-stop(71.9%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, #008E7D 0%, rgba(255, 255, 255, 0) 71.9%);
 }
 
 .homeSlider .wrapperSlide .aboImg {
@@ -1304,6 +1318,9 @@ p {
 .homeSlider .wrapperSlide .textBanner p {
   margin-bottom: 30px;
   width: 77%;
+  color: #fff;
+  font-family: "SomarLight";
+  font-weight: unset;
 }
 
 .homeSlider .swiper-pagination-bullet {
@@ -1312,7 +1329,7 @@ p {
 }
 
 .homeSlider .swiper-pagination-bullet-active {
-  background: #008e7d;
+  background: #008E7D;
 }
 
 .homeNumber {
@@ -1370,11 +1387,11 @@ p {
 }
 
 .homeNumber .col-md-4:nth-of-type(2) .boxNum::after {
-  background-color: #529c44;
+  background-color: #529C44;
 }
 
 .homeNumber .col-md-4:nth-of-type(1) .boxNum::after {
-  background-color: #8d5316;
+  background-color: #8D5316;
 }
 
 .sasoFooter {
@@ -1460,6 +1477,10 @@ p {
   text-decoration: unset;
 }
 
+.sasoModal .registerWay2 > img {
+  max-width: 50px;
+}
+
 .sasoModal .registerWay2 p {
   margin: 0;
   margin-right: 10px;
@@ -1502,6 +1523,26 @@ p {
 .sasoModal .modal-body .clearPadding {
   padding: 0;
   background: #f8f8f8;
+}
+
+.sasoModalInner .modal-dialog {
+  max-width: 1000px;
+}
+
+.sasoModalInner .titleModal {
+  color: #008E7D;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.sasoModalInner input,
+.sasoModalInner select,
+.sasoModalInner textarea {
+  width: 100%;
+}
+
+.sasoModalInner .modal-body {
+  padding: 30px 18px;
 }
 
 .navbarCustomSaso .navbar-light .dropdownCustom .nav-link > img:first-of-type {
@@ -1629,7 +1670,7 @@ p {
 
 .searchWarper .searchAdv {
   font-size: 16px;
-  color: #008e7d;
+  color: #008E7D;
   text-decoration: underline;
 }
 
@@ -1653,9 +1694,25 @@ p {
   min-height: 200px;
   background: #fff url(../images/BGLegan.svg) no-repeat;
   text-align: center;
-  padding: 9px 11px;
+  padding: 9px 11px 40px 11px;
   border-radius: 10px;
   height: 100%;
+}
+
+.mainWhiteBox.BoxUser {
+  border: 1px solid #DADADA;
+}
+
+.mainWhiteBox.BoxUser .textLegan .p18 {
+  font-size: 14px;
+  font-family: "SomarRegular";
+}
+
+.mainWhiteBox.BoxUser .textLegan .font15 a,
+.mainWhiteBox.BoxUser .textLegan .font15 {
+  color: #464646;
+  font-size: 14px;
+  font-family: "SomarLight";
 }
 
 .mainWhiteBox .actionsLegan {
@@ -1819,6 +1876,81 @@ p {
   opacity: 0.5;
 }
 
+.accordionCustom {
+  margin-top: 20px;
+}
+
+.accordionCustom .accordion-button:focus {
+  border-color: unset;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+.accordionCustom .accordion-item {
+  border: 1px solid #EEF1F4;
+  margin-bottom: 20px;
+}
+
+.accordionCustom .accordion-item .accordion-header .accordion-button {
+  background: #EEF1F4;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #464646;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.accordionCustom .accordion-item .accordion-header .accordion-button::after {
+  margin: 0;
+  background-image: url(../images/ArrowAcc.svg);
+}
+
+.accordionCustom .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  background: #008E7D;
+  color: #fff;
+}
+
+.accordionCustom .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.accordionCustom .accordion-body {
+  padding: 23px 0 20px;
+}
+
+.accordionCustom .accordion-body .customWidthRow {
+  margin-top: 0;
+}
+
+.addMemnerBox {
+  background: #EEF1F4;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 6px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.addMemnerBox .font20, .addMemnerBox .navbarCustomSaso .navbar-light .navbar-nav .nav-link span, .navbarCustomSaso .navbar-light .navbar-nav .nav-link .addMemnerBox span, .addMemnerBox .homeSlider .wrapperSlide .textBanner p, .homeSlider .wrapperSlide .textBanner .addMemnerBox p, .addMemnerBox .homeNumber .boxNum .numberCountUp span, .homeNumber .boxNum .numberCountUp .addMemnerBox span {
+  color: #464646;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
 /*
     transform: scale(0.5,0.5);
     transform-origin: center;
@@ -1828,8 +1960,152 @@ p {
     left: -50%;
 
 */
+.apexcharts-text tspan {
+  font-family: "SomarRegular";
+  font-size: 10px;
+}
+
+.apexcharts-legend-marker {
+  border-radius: 50px !important;
+  margin-left: 5px;
+}
+
+.apexcharts-legend-text {
+  font-size: 10px !important;
+}
+
+.bgWhite, .wrapperDash {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  height: 95%;
+}
+
+.viewAll {
+  color: #6C788D;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.MainGreen {
+  color: #529C44;
+}
+
+.Brown {
+  color: #8D5316;
+}
+
+.titleDash {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #008E7D;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.chartCRL {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.chartCRL p {
+  margin: 0;
+}
+
+.chartCRL p span {
+  font-size: 14px;
+  color: #464646;
+}
+
+.chartCRL p span.circle {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: #61C4BD;
+  border-radius: 50px;
+  margin-left: 5px;
+}
+
+.chartCRL p span.circle.darkCrc {
+  background: #066058;
+}
+
+.chartCRL p span.circle.MainGreenBG {
+  background: #529C44;
+}
+
+.chartCRL p span.circle.BrownBG {
+  background: #8D5316;
+}
+
+.chartsSection {
+  margin-bottom: 60px;
+}
+
+.chartsSection .mrgTop .col-md-4,
+.chartsSection .mrgTop .col-md-8 {
+  margin-top: 50px;
+}
+
+.wrapperDash {
+  padding: 20px;
+}
+
+.DashBox {
+  min-height: 100px;
+  background: #61C4BD;
+  border-radius: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  padding: 16px 10px;
+  height: 80%;
+}
+
+.DashBox img {
+  margin-bottom: 6px;
+}
+
+.DashBox span {
+  font-size: 12px;
+  font-family: "SomarLight";
+  opacity: .8;
+}
+
+.swiperSection {
+  padding: 30px 0;
+}
+
+.CommitteesColor .swiper-pagination-bullet-active {
+  background: #61C4BD;
+}
+
+.ProjectColor .DashBox,
+.ProjectColor .swiper-pagination-bullet-active {
+  background: rgba(83, 156, 68, 0.6);
+}
+
+.MeetingColor .DashBox,
+.MeetingColor .swiper-pagination-bullet-active {
+  background: rgba(141, 83, 22, 0.6);
+}
+
 @media (min-width: 1800px) {
   .WrapperContent > .container {
+    max-width: 1400px;
+  }
+  .containerCustom {
     max-width: 1400px;
   }
 }
@@ -1840,12 +2116,6 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-
-@media (min-width: 1200px) {
-  .containerCustom {
-    max-width: 1300px;
   }
 }
 /*# sourceMappingURL=styleRTL.css.map */

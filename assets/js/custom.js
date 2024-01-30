@@ -19,9 +19,17 @@ $( document ).ready(function() {
         $(this).next().fadeToggle('fast')
     })
     // Swiper pages
-    var swiperHome = new Swiper(".mySwiper", {
+    let swiperHome = new Swiper(".mySwiper", {
         pagination: {
           el: ".swiper-pagination",
+        },
+      });
+    let SwiperDash = new Swiper(".SwiperDash", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
         },
       });
 
