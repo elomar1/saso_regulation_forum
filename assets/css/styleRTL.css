@@ -3036,6 +3036,10 @@ ul.PrStages-data li h4 {
   }
 }
 
+.actionShow {
+  display: block !important;
+}
+
 @media (min-width: 1800px) {
   .WrapperContent > .container {
     max-width: 1400px;
