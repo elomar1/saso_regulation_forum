@@ -2,22 +2,22 @@
 <html lang="ar" dir="rtl">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- filepond CSS -->
-  <link rel="stylesheet" href="../assets/css/filepond.min.css">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="../assets/css/bootstrapV5.min.css">
-  <!-- swiper  -->
-  <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
-  <!--  Font Awesome CSS -->
-  <!-- <link rel="stylesheet" href="../assets/css/all.min.css"> -->
-  <!-- custom style -->
-  <link rel="stylesheet" href="../assets/css/styleRTL.css">
+    <!-- filepond CSS -->
+    <link rel="stylesheet" href="../assets/css/filepond.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrapV5.min.css">
+    <!-- swiper  -->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <!--  Font Awesome CSS -->
+    <!-- <link rel="stylesheet" href="../assets/css/all.min.css"> -->
+    <!-- custom style -->
+    <link rel="stylesheet" href="../assets/css/styleRTL.css">
 
-  <title>SASO</title>
+    <title>SASO</title>
 </head>
 
 <body>
@@ -31,7 +31,7 @@
                             <img src="../assets/images/new-logo.svg" alt="" />
                         </a>
                         <a class="navbar-brand " href="#">
-                            مرحبًا! 
+                            مرحبًا!
                         </a>
                         <!-- end logo saso -->
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -92,20 +92,25 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li>
-                                    <li class="nav-item dropdown dropdownCustom">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src="../assets/images/Arrow-Down.svg" alt="">
-                                            <span>مرحبا محمد</span>
-                                            <img src="../assets/images/navUser.png" alt="">
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="#">تعديل ملف الشخصي</a>
-                                            <a class="dropdown-item" href="#">تسجيل خروج</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">شئ اخر</a>
-                                        </div>
-                                    </li>
+                                <li class="nav-item dropdown dropdownCustom">
+                                    <a class="nav-link dropdown-toggle" href="#" >
+                                    <img src="../assets/images/Arrow-Down.svg" alt="">
+                                    <span>مرحبا محمد</span>
+                                    <img src="../assets/images/navUser.png" alt="">
+                                     </a>
+                                     <!-- if is dropdown -->
+                                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="../assets/images/Arrow-Down.svg" alt="">
+                                        <span>مرحبا محمد</span>
+                                        <img src="../assets/images/navUser.png" alt="">
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">تعديل ملف الشخصي</a>
+                                        <a class="dropdown-item" href="#">تسجيل خروج</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">شئ اخر</a>
+                                    </div> -->
                                 </li>
                             </ul>
                         </div>
@@ -118,6 +123,16 @@
             <!-- start Wrapper container -->
             <div class="WrapperContent">
                 <div class="container clearPaddingCont">
+                    <div class="topNav">
+                        <a href="javascript:;" class="slide-nav">
+                            <span class="first"></span>
+                            <span class="second"></span>
+                            <span class="third"></span>
+                            <p class="menu-label">
+                                القائمة
+                            </p>
+                        </a>
+                    </div>
                     <h1 class="title">اللجان</h1>
                     <div class="searchWarper">
                         <div class="inputGroup inputSearch">
@@ -129,79 +144,95 @@
                             <select name="">
                                 <option value="1">اسم القطاع</option>
                                 <option value="2">اسم القطاع</option>
-                             </select>
+                            </select>
                             <div class="inputDate">
-                                <input type="text" placeholder="تاريخ الإنشاء"  onfocus="(this.type='date')"  onblur="(this.type='text')">
+                                <input type="text" placeholder="تاريخ الإنشاء" onfocus="(this.type='date')"
+                                    onblur="(this.type='text')">
                             </div>
                             <a href="#!" class="btnMainWhite ">تطبيق </a>
                         </div>
                         <!-- Button trigger modal -->
                         <button type="button" class="btnMainLight" data-bs-toggle="modal" data-bs-target="#addingLN">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M12 9V12M12 12V15M12 12H15M12 12H9M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 9V12M12 12V15M12 12H15M12 12H9M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                             <span>إضافة لجنة جديدة</span>
                         </button>
-                        
+
                         <!-- Modal -->
-                        <div class="modal fade sasoModalInner  " id="addingLN" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade sasoModalInner  " id="addingLN" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <div class="form">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <h2 class="titleModal">إضافة لجنة جديدة</h2>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="input-group ">
-                                                        <label class='label required' for="field1">سم  اللجنة (عربي)</label>
-                                                        <input type="text" placeholder="كتابة اسم اللجنة باللغة العربية" id="field1">
-                                                      </div>
-                                                </div>
-                                                <!-- end field -->
-                                                <div class="col-md-6">
-                                                    <div class="input-group  " >
-                                                        <label class='label required' for="field2">اسم اللجنة (إنجليزي)</label>
-                                                        <input class="text-left" type="text" placeholder="Please Write Community Name in English" id="field2">
-                                                      </div>
-                                                </div>
-                                                <!-- end field -->
-                                                <div class="col-md-6">
-                                                    <div class="input-group">
-                                                        <label class='label' for="field18">رئيس اللجنة</label>
-                                                        <input type="text" placeholder="كتابة اسم رئيس اللجنة" id="field1">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="form">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <button type="button" class="btn-close customClose"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <h2 class="titleModal">إضافة لجنة جديدة</h2>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="input-group ">
+                                                            <label class='label required' for="field1">سم اللجنة
+                                                                (عربي)</label>
+                                                            <input type="text"
+                                                                placeholder="كتابة اسم اللجنة باللغة العربية"
+                                                                id="field1">
+                                                        </div>
+                                                    </div>
+                                                    <!-- end field -->
+                                                    <div class="col-md-6">
+                                                        <div class="input-group  ">
+                                                            <label class='label required' for="field2">اسم اللجنة
+                                                                (إنجليزي)</label>
+                                                            <input class="text-left" type="text"
+                                                                placeholder="Please Write Community Name in English"
+                                                                id="field2">
+                                                        </div>
+                                                    </div>
+                                                    <!-- end field -->
+                                                    <div class="col-md-6">
+                                                        <div class="input-group">
+                                                            <label class='label' for="field18">رئيس اللجنة</label>
+                                                            <input type="text" placeholder="كتابة اسم رئيس اللجنة"
+                                                                id="field1">
+                                                        </div>
+                                                    </div>
+                                                    <!-- end field -->
+                                                    <div class="col-md-6">
+                                                        <div class="input-group">
+                                                            <label class='label' for="field12">المرفقات</label>
+                                                            <input class="filePoundClass" type="file" name="filepond"
+                                                                required multiple />
+                                                        </div>
+                                                    </div>
+                                                    <!-- end field -->
+                                                    <div class="col-md-6">
+                                                        <div class="input-group">
+                                                            <label class='label' for="field12">مجال عمل اللجنة
+                                                                الفنية</label>
+                                                            <textarea id="field12"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end field -->
+                                                    <div class="col-md-12">
+                                                        <div class="actionFormModal">
+                                                            <button type="submit" class="btnMain">حفظ</button>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <!-- end field -->
-                                                <div class="col-md-6">
-                                                    <div class="input-group">
-                                                        <label class='label' for="field12">المرفقات</label>
-                                                        <input class="filePoundClass" type="file" name="filepond" required multiple />
-                                                      </div>
-                                                </div>
-                                                <!-- end field -->
-                                                <div class="col-md-6">
-                                                    <div class="input-group">
-                                                        <label class='label' for="field12">مجال عمل اللجنة الفنية</label>
-                                                       <textarea id="field12"></textarea>
-                                                      </div>
-                                                </div>
-                                                 <!-- end field -->
-                                                <div class="col-md-12">
-                                                   <div class="actionFormModal">
-                                                    <button type="submit" class="btnMain">حفظ</button>
-                                                   </div>
-                                                </div>
+                                                <!-- end row -->
                                             </div>
-                                            <!-- end row -->
+                                            <!-- end container -->
                                         </div>
-                                        <!-- end container -->
                                     </div>
+                                    <!-- end box -->
                                 </div>
-                                <!-- end box -->
-                            </div>
                             </div>
                         </div>
                         <!-- end modal -->
@@ -212,19 +243,19 @@
                             <div class="mainWhiteBox">
                                 <div class="actionsLegan">
                                     <a href="#!" class="moreAction">
-                                       <img src="../assets/images/MoreAction.svg" alt="">
+                                        <img src="../assets/images/MoreAction.svg" alt="">
                                     </a>
                                     <div class="moreBox">
                                         <a href="#!">
-                                            <img src="../assets/images/Edit.svg" alt=""> 
+                                            <img src="../assets/images/Edit.svg" alt="">
                                             <span>تعديل</span>
                                         </a>
                                         <a href="#!">
-                                            <img src="../assets/images/Change.svg" alt=""> 
+                                            <img src="../assets/images/Change.svg" alt="">
                                             <span>تغيير الحالة</span>
                                         </a>
                                         <a href="#!">
-                                            <img src="../assets/images/Trash.svg" alt=""> 
+                                            <img src="../assets/images/Trash.svg" alt="">
                                             <span>حذف</span>
                                         </a>
                                     </div>
@@ -244,19 +275,19 @@
                             <div class="mainWhiteBox">
                                 <div class="actionsLegan">
                                     <a href="#!" class="moreAction">
-                                       <img src="../assets/images/MoreAction.svg" alt="">
+                                        <img src="../assets/images/MoreAction.svg" alt="">
                                     </a>
                                     <div class="moreBox">
                                         <a href="#!">
-                                            <img src="../assets/images/Edit.svg" alt=""> 
+                                            <img src="../assets/images/Edit.svg" alt="">
                                             <span>تعديل</span>
                                         </a>
                                         <a href="#!">
-                                            <img src="../assets/images/Change.svg" alt=""> 
+                                            <img src="../assets/images/Change.svg" alt="">
                                             <span>تغيير الحالة</span>
                                         </a>
                                         <a href="#!">
-                                            <img src="../assets/images/Trash.svg" alt=""> 
+                                            <img src="../assets/images/Trash.svg" alt="">
                                             <span>حذف</span>
                                         </a>
                                     </div>
@@ -276,19 +307,19 @@
                             <div class="mainWhiteBox">
                                 <div class="actionsLegan">
                                     <a href="#!" class="moreAction">
-                                       <img src="../assets/images/MoreAction.svg" alt="">
+                                        <img src="../assets/images/MoreAction.svg" alt="">
                                     </a>
                                     <div class="moreBox">
                                         <a href="#!">
-                                            <img src="../assets/images/Edit.svg" alt=""> 
+                                            <img src="../assets/images/Edit.svg" alt="">
                                             <span>تعديل</span>
                                         </a>
                                         <a href="#!">
-                                            <img src="../assets/images/Change.svg" alt=""> 
+                                            <img src="../assets/images/Change.svg" alt="">
                                             <span>تغيير الحالة</span>
                                         </a>
                                         <a href="#!">
-                                            <img src="../assets/images/Trash.svg" alt=""> 
+                                            <img src="../assets/images/Trash.svg" alt="">
                                             <span>حذف</span>
                                         </a>
                                     </div>
@@ -308,19 +339,19 @@
                             <div class="mainWhiteBox">
                                 <div class="actionsLegan">
                                     <a href="#!" class="moreAction">
-                                       <img src="../assets/images/MoreAction.svg" alt="">
+                                        <img src="../assets/images/MoreAction.svg" alt="">
                                     </a>
                                     <div class="moreBox">
                                         <a href="#!">
-                                            <img src="../assets/images/Edit.svg" alt=""> 
+                                            <img src="../assets/images/Edit.svg" alt="">
                                             <span>تعديل</span>
                                         </a>
                                         <a href="#!">
-                                            <img src="../assets/images/Change.svg" alt=""> 
+                                            <img src="../assets/images/Change.svg" alt="">
                                             <span>تغيير الحالة</span>
                                         </a>
                                         <a href="#!">
-                                            <img src="../assets/images/Trash.svg" alt=""> 
+                                            <img src="../assets/images/Trash.svg" alt="">
                                             <span>حذف</span>
                                         </a>
                                     </div>
@@ -340,19 +371,19 @@
                             <div class="mainWhiteBox">
                                 <div class="actionsLegan">
                                     <a href="#!" class="moreAction">
-                                       <img src="../assets/images/MoreAction.svg" alt="">
+                                        <img src="../assets/images/MoreAction.svg" alt="">
                                     </a>
                                     <div class="moreBox">
                                         <a href="#!">
-                                            <img src="../assets/images/Edit.svg" alt=""> 
+                                            <img src="../assets/images/Edit.svg" alt="">
                                             <span>تعديل</span>
                                         </a>
                                         <a href="#!">
-                                            <img src="../assets/images/Change.svg" alt=""> 
+                                            <img src="../assets/images/Change.svg" alt="">
                                             <span>تغيير الحالة</span>
                                         </a>
                                         <a href="#!">
-                                            <img src="../assets/images/Trash.svg" alt=""> 
+                                            <img src="../assets/images/Trash.svg" alt="">
                                             <span>حذف</span>
                                         </a>
                                     </div>
@@ -372,19 +403,19 @@
                             <div class="mainWhiteBox">
                                 <div class="actionsLegan">
                                     <a href="#!" class="moreAction">
-                                       <img src="../assets/images/MoreAction.svg" alt="">
+                                        <img src="../assets/images/MoreAction.svg" alt="">
                                     </a>
                                     <div class="moreBox">
                                         <a href="#!">
-                                            <img src="../assets/images/Edit.svg" alt=""> 
+                                            <img src="../assets/images/Edit.svg" alt="">
                                             <span>تعديل</span>
                                         </a>
                                         <a href="#!">
-                                            <img src="../assets/images/Change.svg" alt=""> 
+                                            <img src="../assets/images/Change.svg" alt="">
                                             <span>تغيير الحالة</span>
                                         </a>
                                         <a href="#!">
-                                            <img src="../assets/images/Trash.svg" alt=""> 
+                                            <img src="../assets/images/Trash.svg" alt="">
                                             <span>حذف</span>
                                         </a>
                                     </div>
@@ -404,19 +435,19 @@
                             <div class="mainWhiteBox">
                                 <div class="actionsLegan">
                                     <a href="#!" class="moreAction">
-                                       <img src="../assets/images/MoreAction.svg" alt="">
+                                        <img src="../assets/images/MoreAction.svg" alt="">
                                     </a>
                                     <div class="moreBox">
                                         <a href="#!">
-                                            <img src="../assets/images/Edit.svg" alt=""> 
+                                            <img src="../assets/images/Edit.svg" alt="">
                                             <span>تعديل</span>
                                         </a>
                                         <a href="#!">
-                                            <img src="../assets/images/Change.svg" alt=""> 
+                                            <img src="../assets/images/Change.svg" alt="">
                                             <span>تغيير الحالة</span>
                                         </a>
                                         <a href="#!">
-                                            <img src="../assets/images/Trash.svg" alt=""> 
+                                            <img src="../assets/images/Trash.svg" alt="">
                                             <span>حذف</span>
                                         </a>
                                     </div>
@@ -495,44 +526,44 @@
             </div>
             <ul class="ulSide">
                 <li class="">
-                    <a href="#" >
+                    <a href="#">
                         <img src="../assets/images/asideIcon1.svg" alt="">
                         <span>الرئيسية</span>
                     </a>
                 </li>
                 <li class="active">
-                    <a href="#" >
+                    <a href="#">
                         <img src="../assets/images/asideIcon2.svg" alt="">
                         <span>اللجان</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="#" >
+                    <a href="#">
                         <img src="../assets/images/asideIcon3.svg" alt="">
                         <span>المشاريع</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="#" >
+                    <a href="#">
                         <img src="../assets/images/asideIcon4.svg" alt="">
                         <span>فرق العمل</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="#" >
+                    <a href="#">
                         <img src="../assets/images/asideIcon5.svg" alt="">
                         <span>الاجتماعات</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="#" >
+                    <a href="#">
                         <img src="../assets/images/asideIcon6.svg" alt="">
                         <span>الإعدادات</span>
                     </a>
                 </li>
             </ul>
         </aside>
-         <!-- end aside -->
+        <!-- end aside -->
     </div>
 
     <!-- start script ref  -->
@@ -546,19 +577,19 @@
     <script src="../assets/js/custom.js"></script>
     <!-- end script ref  -->
     <script>
-              $('.filePoundClass').filepond({
-        labelIdle: `برجاء رفع المرفقات المطلوبة بحد أقصى 5 ميجا للملف `,
-        // imagePreviewHeight : 40,
-        allowMultiple : true
-      });
-  
-      // Set allowMultiple property to true
-    //   $('.filePoundClass').filepond('allowMultiple', true);
-    
-      // Listen for addfile event
-      $('.filePoundClass').on('FilePond:addfile', function(e) {
-          console.log('file added event', e);
-      });
+        $('.filePoundClass').filepond({
+            labelIdle: `برجاء رفع المرفقات المطلوبة بحد أقصى 5 ميجا للملف `,
+            // imagePreviewHeight : 40,
+            allowMultiple: true
+        });
+
+        // Set allowMultiple property to true
+        //   $('.filePoundClass').filepond('allowMultiple', true);
+
+        // Listen for addfile event
+        $('.filePoundClass').on('FilePond:addfile', function (e) {
+            console.log('file added event', e);
+        });
     </script>
 </body>
 

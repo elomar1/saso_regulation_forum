@@ -8,14 +8,20 @@ $( document ).ready(function() {
     $('.closeModal1').click(function(){
         $('#loginHome').modal('hide')
     })
+    $('.topNav .slide-nav').click(function(){
+        $('.LinksDashboard').toggleClass('showSide')
+        $(this).toggleClass('opened')
+    })
     $('.closeModal2').click(function(){
         $('#registerHome').modal('hide')
         $('#loginHome').modal('show')
     })
+    // handle advanced search
     $('.showAdvsearch').click(function(){
         $('.hideSeach').toggleClass('showIt')
     })
-    $('.moreAction').click(function(){
+    $('.moreAction').click(function(e){
+      e.preventDefault()
         $(this).next().fadeToggle('fast')
     })
     // Swiper pages
@@ -31,6 +37,7 @@ $( document ).ready(function() {
           el: ".swiper-pagination",
           clickable: true,
         },
+        
       });
 
       // count up 
@@ -51,3 +58,4 @@ $( document ).ready(function() {
       });
 
 });
+

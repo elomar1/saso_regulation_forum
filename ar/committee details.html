@@ -92,20 +92,25 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li>
-                                    <li class="nav-item dropdown dropdownCustom">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src="../assets/images/Arrow-Down.svg" alt="">
-                                            <span>مرحبا محمد</span>
-                                            <img src="../assets/images/navUser.png" alt="">
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="#">تعديل ملف الشخصي</a>
-                                            <a class="dropdown-item" href="#">تسجيل خروج</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">شئ اخر</a>
-                                        </div>
-                                    </li>
+                                <li class="nav-item dropdown dropdownCustom">
+                                    <a class="nav-link dropdown-toggle" href="#" >
+                                    <img src="../assets/images/Arrow-Down.svg" alt="">
+                                    <span>مرحبا محمد</span>
+                                    <img src="../assets/images/navUser.png" alt="">
+                                     </a>
+                                     <!-- if is dropdown -->
+                                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="../assets/images/Arrow-Down.svg" alt="">
+                                        <span>مرحبا محمد</span>
+                                        <img src="../assets/images/navUser.png" alt="">
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">تعديل ملف الشخصي</a>
+                                        <a class="dropdown-item" href="#">تسجيل خروج</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">شئ اخر</a>
+                                    </div> -->
                                 </li>
                             </ul>
                         </div>
@@ -118,7 +123,16 @@
             <!-- start Wrapper container -->
             <div class="WrapperContent">
                 <div class="container clearPaddingCont">
-                   
+                    <div class="topNav">
+                        <a href="javascript:;" class="slide-nav">
+                         <span class="first"></span>
+                         <span class="second"></span>
+                         <span class="third"></span>
+                         <p class="menu-label">
+                           القائمة  
+                         </p>
+                        </a>
+                     </div>
                     <div class="row customWidthRow">
                        <div class="col-12">
                         <div class="breadcrumb-main">
@@ -973,6 +987,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-12">
+                                        <button type="button" class="btn-close customClose" data-bs-dismiss="modal" aria-label="Close"></button>
                                         <h2 class="titleModal">إضافة مشروع جديد</h2>
                                         <p class="basic">
                                             بيانات المشروع الأساسية
