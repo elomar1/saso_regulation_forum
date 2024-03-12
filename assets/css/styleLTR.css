@@ -1417,6 +1417,27 @@ p {
   padding: 16px 24px;
 }
 
+.LinksDashboard .ulSide li .subMenu {
+  display: none;
+  padding: 22px  0;
+  list-style: unset;
+  background: #e5e5e5;
+  width: calc(100% + 48px);
+  margin-top: 20px;
+  margin-left: -24px;
+  margin-bottom: -15px;
+}
+
+.LinksDashboard .ulSide li .subMenu li {
+  padding: 12px 0;
+  padding-left: 50px;
+}
+
+.LinksDashboard .ulSide li .subMenu li a {
+  font-size: 16px;
+  color: #066058;
+}
+
 .LinksDashboard .ulSide li a img {
   max-width: 25px;
 }

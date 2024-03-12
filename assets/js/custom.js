@@ -19,7 +19,9 @@ $(document).ready(function () {
     e.preventDefault();
     $(this).next().fadeToggle("fast");
   });
-
+  $(".ulSide li a").click(function () {
+    $(this).next().slideToggle().parent().siblings().children('.subMenu').slideUp()
+  });
  /*
 --- vanilla js
 */
