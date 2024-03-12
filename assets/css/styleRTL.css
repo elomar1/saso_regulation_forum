@@ -1452,6 +1452,10 @@ p {
   background: #008E7D;
 }
 
+.LinksDashboard .ulSide li.active .subMenu {
+  display: block;
+}
+
 .homeSlider .wrapperSlide {
   position: relative;
   min-height: 400px;

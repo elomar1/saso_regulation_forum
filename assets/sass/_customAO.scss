@@ -488,6 +488,9 @@ p {
       }
       &.active {
         background: $green008E7D;
+        .subMenu {
+          display: block;
+        }
       }
     }
   }
